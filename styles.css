@@ -691,6 +691,20 @@ footer {
 /* Para telas pequenas (celulares menores que 768px) */
 @media (max-width: 768px) {
 
+
+    .footer-content {
+        flex-direction: column; /* Empilha os itens na vertical */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        margin: 10px 0; /* Ajusta o espaçamento para os ícones sociais em telas pequenas */
+    }
+
     #projetos h2 {
         font-size: 2.5rem;
     }
