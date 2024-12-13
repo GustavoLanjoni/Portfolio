@@ -204,13 +204,67 @@ h2 {
     margin-top: 10px;
 }
 
-/* Footer */
+
 footer {
-    background-color: #1a1a1a;
+    background-color: #333333;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+.about-me p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    background: #222; /* Fundo escuro do rodapé inferior */
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+}
+
 
 .social-icons a {
     margin: 0 15px;
@@ -230,16 +284,7 @@ footer {
     animation: fadeIn 2s 1.5s forwards;
 }
 
-/* Footer bottom */
-.footer-bottom {
-    background-color: #141414;
-    padding: 10px 0;
-    font-size: 14px;
-}
 
-.footer-bottom p {
-    color: #fff;
-}
 
 /* Seção Sobre */
 #sobre {
@@ -646,9 +691,24 @@ footer {
 /* Para telas pequenas (celulares menores que 768px) */
 @media (max-width: 768px) {
 
-     .card {
-        width: 45%; /* Cartões lado a lado em telas maiores */
-        margin: 20px 10px;
+    #projetos h2 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.7rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
     }
 
     /*Sobre */
