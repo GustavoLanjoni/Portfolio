@@ -1,0 +1,658 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #141414;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Estilo do Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a1a1a;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00f7ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Ícone do Menu */
+.menu-icon {
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 30px;
+    height: 3px;
+    background: #00f7ff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Navegação */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00f7ff;
+}
+
+/* Efeitos de transição e animações para o menu */
+#nav-links {
+    display: none;
+}
+
+#menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+}
+
+#menu-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 7px;
+}
+
+#nav-links.active {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+/* Seção Principal */
+.main-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #00f7ff, #1a1a1a);
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    animation: fadeIn 2s ease-out;
+}
+
+.main-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 2s 0.5s forwards;
+}
+
+.main-section p {
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
+}
+
+.background-shape, .background-shape-two {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: moveShape 10s linear infinite;
+}
+
+.background-shape {
+    top: -500px;
+    left: -500px;
+}
+
+.background-shape-two {
+    top: 500px;
+    left: 500px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes moveShape {
+    0% { transform: translateX(0) translateY(0); }
+    100% { transform: translateX(-1000px) translateY(-1000px); }
+}
+
+/* Seções */
+.section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00f7ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeIn 2s 0.5s forwards;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    color: #00f7ff;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 2s 1.5s forwards;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info, .about-me {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 2s 1.5s forwards;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    background-color: #141414;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #fff;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 60px 20px;
+    animation: gradientAnimation 5s infinite alternate;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;  /* Permite que os itens se movam para a próxima linha */
+}
+
+.about-image {
+    width: 300px; /* Tamanho quadrado da imagem */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px; /* Borda arredondada para suavizar */
+    animation: fadeIn 2s ease-out;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 600px;
+    line-height: 1.6;
+    text-align: center;  /* Alinha o texto no centro */
+}
+
+/* Estilos gerais para a seção de habilidades */
+#linguagens {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 50px rgba(0, 255, 255, 0.2);
+}
+
+#linguagens h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #00f7ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.5);
+    opacity: 0;
+    animation: fadeIn 2s 0.5s forwards;
+}
+
+/* Estilos para as abas */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tab-button {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.tab-button:hover,
+.tab-button.active {
+    background: linear-gradient(135deg, #00f7ff, #005577);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+/* Conteúdo das abas */
+.tab-content {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para os cards de habilidades */
+.linguagens-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
+}
+
+.linguagem {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
+    border-radius: 15px;
+    padding: 25px;
+    width: 180px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.linguagem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 50px rgba(0, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.3), rgba(0, 0, 0, 0.9));
+}
+
+.linguagem img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+
+.linguagem:hover img {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.8));
+}
+
+.linguagem p {
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    margin-top: 10px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Para telas muito pequenas (menos que 480px) */
+@media (max-width: 480px) {
+
+    /*Sobre*/
+    .about-container p {
+        font-size: 1rem; /* Reduz o tamanho do texto em telas menores */
+        max-width: 100%; /* Garante que o texto ocupe toda a largura */
+    }
+
+    .about-image {
+        width: 200px; /* Ajusta ainda mais o tamanho da imagem */
+        height: 200px;
+    }
+
+
+    .linguagem {
+        width: 100px;  /* Reduz a largura das caixas */
+        padding: 10px 15px;  /* Diminui o padding */
+    }
+
+    .linguagem img {
+        width: 30px; /* Reduz as imagens */
+        height: 30px;
+    }
+
+    .linguagem p {
+        font-size: 0.8rem; /* Menor tamanho da fonte */
+    }
+
+    #sobre img {
+        max-width: 150px; /* Ajusta ainda mais o tamanho da imagem */
+    }
+
+    /* Ajuste do menu */
+    .menu-icon {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-links {
+        padding: 20px; /* Menor padding */
+        width: 250px; /* Menor largura para dispositivos ainda menores */
+    }
+
+    .nav-links a {
+        font-size: 16px; /* Tamanho de fonte reduzido */
+        margin-bottom: 15px; /* Menor espaçamento */
+    }
+
+    /* Ajuste para a seção de Linguagens de Programação */
+    #linguagens h2 {
+        font-size: 1.8rem; /* Título ainda menor em telas pequenas */
+        margin-bottom: 20px;  /* Menor margem */
+    }
+
+    .linguagens-container {
+        gap: 15px; /* Menor espaçamento para melhor organização */
+    }
+}
+
+
+/* Responsividade */
+
+/* Para celulares e tablets */
+@media (max-width: 1024px) {
+
+    /* Para tablets */
+    #linguagens h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .tab-button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    .linguagem {
+        width: 150px;
+        padding: 20px;
+    }
+
+    .linguagem img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .linguagem p {
+        font-size: 1rem;
+    }
+
+    .linguagens-container {
+        gap: 30px;
+    }
+
+    #sobre img {
+        max-width: 250px; /* Ajusta o tamanho máximo para telas de tablets */
+    }
+
+    /* Ícone do menu visível */
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Menu visível em celulares */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        padding: 30px; /* Aumenta o padding para dar mais espaço interno */
+        flex-direction: column;
+        width: 300px; /* Aumenta a largura da caixa do menu */
+        height: auto; /* Deixa a altura automática para se ajustar ao conteúdo */
+        transform: translateX(100%) scale(0.95); /* Começa fora da tela e com escala reduzida */
+        opacity: 0; /* Começa invisível */
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s ease; /* Animações mais avançadas */
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        margin-bottom: 20px; /* Maior espaçamento entre os itens do menu */
+        opacity: 0; /* Começam invisíveis */
+        transform: translateX(-20px); /* Inicia levemente deslocado */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Animações para os itens do menu */
+    }
+
+    /* Quando o menu está ativo */
+    .nav-links.active {
+        display: flex;
+        transform: translateX(0) scale(1); /* O menu desliza para dentro e volta ao tamanho normal */
+        opacity: 1; /* Torna o menu visível */
+    }
+
+    /* Animação para os links */
+    .nav-links.active a {
+        opacity: 1; /* Torna os links visíveis */
+        transform: translateX(0); /* Traz os links para a posição original */
+        transition: opacity 0.5s ease, transform 0.5s ease; /* Transições suaves para os links */
+    }
+
+    /* Ajuste para a seção de Linguagens de Programação */
+    #linguagens h2 {
+        font-size: 2rem; /* Ajusta o tamanho do título para telas menores */
+        margin-bottom: 30px;
+    }
+
+    .linguagens-container {
+        gap: 20px; /* Menor espaçamento para que os itens se ajustem melhor */
+    }
+}
+
+/* Para telas pequenas (celulares menores que 768px) */
+@media (max-width: 768px) {
+
+    /*Sobre */
+    .about-container {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        text-align: center;  /* Centraliza o texto */
+    }
+
+    .about-image {
+        width: 250px; /* Ajusta o tamanho da imagem */
+        height: 250px;
+    }
+
+    .about-container p {
+        font-size: 1.1rem; /* Reduz um pouco o tamanho do texto */
+        max-width: 500px; /* Ajusta a largura máxima do texto */
+    }
+
+
+     /* Para dispositivos móveis */
+     #linguagens {
+        padding: 60px 10px;
+    }
+
+    #linguagens h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .tab-button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .linguagem {
+        width: 120px;
+        padding: 15px;
+    }
+
+    .linguagem img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .linguagem p {
+        font-size: 0.9rem;
+    }
+
+    .linguagens-container {
+        gap: 20px;
+    }
+
+    #sobre img {
+        max-width: 200px; /* Ajusta o tamanho máximo para telas menores */
+    }
+
+    /* Ícone do menu visível */
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Menu visível em celulares */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        padding: 30px; /* Aumenta o padding para dar mais espaço interno */
+        flex-direction: column;
+        width: 300px; /* Aumenta a largura da caixa do menu */
+        height: auto; /* Deixa a altura automática para se ajustar ao conteúdo */
+        transform: translateX(100%) scale(0.95); /* Começa fora da tela e com escala reduzida */
+        opacity: 0; /* Começa invisível */
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s ease; /* Animações mais avançadas */
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        margin-bottom: 20px; /* Maior espaçamento entre os itens do menu */
+        opacity: 0; /* Começam invisíveis */
+        transform: translateX(-20px); /* Inicia levemente deslocado */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Animações para os itens do menu */
+    }
+
+    /* Quando o menu está ativo */
+    .nav-links.active {
+        display: flex;
+        transform: translateX(0) scale(1); /* O menu desliza para dentro e volta ao tamanho normal */
+        opacity: 1; /* Torna o menu visível */
+    }
+
+    /* Animação para os links */
+    .nav-links.active a {
+        opacity: 1; /* Torna os links visíveis */
+        transform: translateX(0); /* Traz os links para a posição original */
+        transition: opacity 0.5s ease, transform 0.5s ease; /* Transições suaves para os links */
+    }
+}

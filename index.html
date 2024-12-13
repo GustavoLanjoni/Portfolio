@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Gustavo Lanjoni</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Gustavo Lanjoni</div>
+        <div class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+
+    <!-- Seção Principal -->
+    <section class="main-section">
+        <div class="container">
+            <h1>Bem-vindo ao meu Portfólio</h1>
+            <p>Desenvolvedor apaixonado por criar soluções inovadoras. Explore meus projetos e entre em contato!</p>
+        </div>
+        <div class="background-shape"></div>
+        <div class="background-shape-two"></div>
+    </section>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-container">
+                <img src="foto.jpg" alt="Foto de Gustavo Lanjoni" class="about-image">
+                <p>Sou um desenvolvedor apaixonado por criar soluções inovadoras, com foco em simplicidade e funcionalidade. Busco sempre desafios que me permitam crescer e aprimorar minhas habilidades.</p>
+            </div>
+        </div>
+    </section>
+
+<!--habilidades-->
+<section id="linguagens" class="section">
+    <div class="container">
+        <h2>Minhas Skills</h2>
+        
+        <!-- Abas -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('frontend')">Front-End</button>
+            <button class="tab-button" onclick="openTab('backend')">Back-End</button>
+            <button class="tab-button" onclick="openTab('database')">Banco de Dados</button>
+        </div>
+
+        <!-- Conteúdo das Abas -->
+        <div id="frontend" class="tab-content active">
+            <div class="linguagens-container">
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Angular_logo.svg" alt="Angular">
+                    <p>Angular</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="backend" class="tab-content">
+            <div class="linguagens-container">
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Java_logo_and_wordmark.svg" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Spring_Framework_Logo_2018.svg" alt="Spring Boot">
+                    <p>Spring Boot</p>
+                </div>
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/PHP_logo.svg" alt="PHP">
+                    <p>PHP</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="database" class="tab-content">
+            <div class="linguagens-container">
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/MySQL_logo.svg" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+                <div class="linguagem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Postgresql_elephant.svg" alt="PostgreSQL">
+                    <p>PostgreSQL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="card">
+                <h3>Projeto 1</h3>
+                <img src="" alt="">
+                <p>Este é um projeto simples que visa mostrar meu conhecimento em tecnologias modernas.</p>
+            </div>
+            <div class="card">
+                <h3>Projeto 2</h3>
+                <img src="" alt="">
+                <p>Projeto mais complexo, envolvendo integração de APIs e design responsivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Conecte-se comigo pelas redes sociais ou envie um e-mail!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com" target="_blank"><img src="linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://www.github.com" target="_blank"><img src="github.svg" alt="GitHub"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="instagram.svg" alt="Instagram"></a>
+                <a href="https://www.tiktok.com" target="_blank"><img src="tiktok.svg" alt="TikTok"></a>
+            </div>
+    
+            <div class="contact-info">
+                <p>Entre em contato comigo:</p>
+                <p>Email: <a href="mailto:gustavosilva94514@gmail.com">gustavosilva94514@gmail.com</a></p>
+                <p>Telefone: <a href="tel:+5517996489436">+55 (17) 99648-9436</a></p>
+            </div>
+    
+            <div class="about-me">
+                <p>Desenvolvedor apaixonado por criar soluções inovadoras e explorar novas tecnologias. Sempre buscando aprender mais e enfrentar novos desafios.</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gustavo Lanjoni. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Script JavaScript -->
+<script>
+    function openTab(tabName) {
+        // Oculta todas as abas
+        var tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(function(tab) {
+            tab.classList.remove('active');
+        });
+        
+        // Remove a classe 'active' das abas do menu
+        var tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(function(button) {
+            button.classList.remove('active');
+        });
+        
+        // Exibe a aba correspondente
+        document.getElementById(tabName).classList.add('active');
+        
+        // Marca o botão da aba ativa
+        var activeButton = document.querySelector('[onclick="openTab(\'' + tabName + '\')"]');
+        activeButton.classList.add('active');
+    }
+
+    // Define a aba "Front-End" como padrão
+    openTab('frontend');
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
