@@ -533,8 +533,159 @@ footer {
     opacity: 0.2; /* Manter a opacidade original */
 }
 
+
+
+/* Seção de Contato */
+#contato {
+    padding: 100px 0;
+    background-color: #141414; /* Fundo escuro */
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título Principal */
+h2 {
+    font-size: 3.5rem;
+   
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Efeito de brilho */
+}
+
+/* Subtítulo */
+p {
+    font-size: 1.3rem;
+    color: #bbb; /* Cor de texto suave */
+    margin-bottom: 50px;
+    opacity: 0.8;
+}
+
+/* Botão para Acessar o Blog */
+.blog-button .btn-futuristic {
+    background-color: rgba(0, 255, 255, 0.7); /* Cor ciano futurista */
+    color: #141414; /* Cor do texto escura */
+    padding: 18px 35px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 35px;
+    border: 2px solid #00f7ff;;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.4);
+}
+
+.blog-button .btn-futuristic:hover {
+    background-color: #141414; /* Fundo escuro */
+    color: #00bcd4; /* Cor ciano futurista */
+    border: 2px solid #00bcd4;
+    box-shadow: 0 0 30px rgba(0, 188, 212, 0.7); /* Brilho mais forte */
+}
+
+/* Posts do Blog */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Quadrados dinâmicos */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Cartões de Post */
+.post-card {
+    background-color: #222; /* Cor de fundo escura e elegante */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-10px); /* Levanta o cartão ao passar o mouse */
+    box-shadow: 0 15px 40px rgba(0, 188, 212, 0.5); /* Brilho futurista ao hover */
+}
+
+/* Imagem dentro do Cartão */
+.post-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    border-bottom: 2px solid #00bcd4; /* Linha de separação */
+}
+
+.post-card:hover img {
+    opacity: 0.85; /* Efeito de opacidade ao passar o mouse */
+}
+
+/* Título do Post */
+.post-card h3 {
+    font-size: 1.7rem;
+    color: #00bcd4; /* Cor futurista */
+    margin: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(0, 188, 212, 0.6); /* Efeito de brilho */
+}
+
+/* Parágrafo do Post */
+.post-card p {
+    font-size: 1.1rem;
+    color: #bbb; /* Cor de texto suave */
+    margin: 0 25px 25px;
+    opacity: 0.9;
+}
+
+/* Animação para exibir os posts com um efeito fade */
+.blog-posts {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 /* Para telas muito pequenas (menos que 480px) */
 @media (max-width: 480px) {
+
+
+    h2 {
+        font-size: 2rem; /* Tamanho de fonte menor em telas muito pequenas */
+    }
+
+    .blog-button .btn-futuristic {
+        font-size: 0.9rem;
+        padding: 12px 25px;
+    }
+
+    .post-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .post-card p {
+        font-size: 0.9rem;
+    }
 
     /*Sobre*/
     .about-container p {
@@ -596,9 +747,28 @@ footer {
 
 
 /* Responsividade */
-
 /* Para celulares e tablets */
 @media (max-width: 1024px) {
+
+    .blog-posts {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    .blog-button .btn-futuristic {
+        font-size: 1rem;
+    }
+
+    .post-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .post-card p {
+        font-size: 1rem;
+    }
 
     /* Para tablets */
     #linguagens h2 {
@@ -691,36 +861,28 @@ footer {
 /* Para telas pequenas (celulares menores que 768px) */
 @media (max-width: 768px) {
 
+    
 
-    .footer-content {
-        flex-direction: column; /* Empilha os itens na vertical */
-        align-items: center; /* Centraliza os itens verticalmente */
+    .blog-posts {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        gap: 20px;
     }
 
-    .footer-bottom {
-        margin-top: 20px;
-    }
-
-    .social-icons a {
-        margin: 10px 0; /* Ajusta o espaçamento para os ícones sociais em telas pequenas */
-    }
-
-    #projetos h2 {
+    h2 {
         font-size: 2.5rem;
     }
 
-    .card {
-        padding: 20px;
-    }
-
-    .card h3 {
-        font-size: 1.7rem;
-    }
-
-    .card p {
+    .blog-button .btn-futuristic {
         font-size: 1rem;
     }
 
+    .post-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .post-card p {
+        font-size: 0.95rem;
+    }
     .btn {
         font-size: 1rem;
     }
