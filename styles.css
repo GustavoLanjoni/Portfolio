@@ -205,55 +205,28 @@ h2 {
 }
 
 
+/* Estilos gerais para o rodapé */
 footer {
     background-color: #333333;
     color: #fff;
     padding: 20px 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Container do conteúdo do rodapé */
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Estilos do rodapé inferior */
 .footer-bottom {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-.contact-info a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-
-.about-me p {
-    font-size: 1rem;
-    color: #f0f0f0;
-    max-width: 400px;
-    margin-top: 10px;
-}
-
-.footer-bottom {
-    background: #222; /* Fundo escuro do rodapé inferior */
+    background: #222;
     padding: 15px 20px;
     text-align: center;
     margin-top: 30px;
@@ -265,9 +238,9 @@ footer {
     color: #bbb;
 }
 
-
+/* Estilo dos ícones sociais */
 .social-icons a {
-    margin: 0 15px;
+    margin: 0 10px;
     display: inline-block;
     opacity: 0;
     animation: fadeIn 2s 1.5s forwards;
@@ -278,10 +251,39 @@ footer {
     height: 30px;
 }
 
-.contact-info, .about-me {
-    margin-top: 20px;
-    opacity: 0;
-    animation: fadeIn 2s 1.5s forwards;
+/* Efeito de hover nos ícones sociais */
+.social-icons a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Estilo para links de contato */
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do texto sobre mim */
+.about-me p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+/* Animação para fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -387,7 +389,7 @@ footer {
     background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
     border-radius: 15px;
     padding: 25px;
-    width: 180px;
+    width: 150px;
     text-align: center;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -669,6 +671,21 @@ p {
 /* Para telas muito pequenas (menos que 480px) */
 @media (max-width: 480px) {
 
+    footer {
+        padding: 15px 0;
+    }
+
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+
+    .footer-bottom {
+        font-size: 0.75rem;
+    }
 
     h2 {
         font-size: 2rem; /* Tamanho de fonte menor em telas muito pequenas */
@@ -861,7 +878,24 @@ p {
 /* Para telas pequenas (celulares menores que 768px) */
 @media (max-width: 768px) {
 
-    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .social-icons a {
+        margin: 0 8px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+
+    .about-me p {
+        max-width: 100%;
+        text-align: center;
+    }
 
     .blog-posts {
         grid-template-columns: 1fr; /* Uma coluna em telas menores */
