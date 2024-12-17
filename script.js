@@ -18,7 +18,7 @@ function createTrail(x, y) {
     // Remover o rastro após a animação
     setTimeout(() => {
         trail.remove();
-    }, 500); // Tempo da animação (500ms)
+    }, 20); // Tempo da animação (500ms)
 }
 
 // Movimentar o cursor com o mouse
