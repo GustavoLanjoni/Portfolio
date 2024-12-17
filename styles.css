@@ -472,6 +472,7 @@ footer {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     position: relative;
     overflow: hidden;
+    
 }
 
 .card:hover {
@@ -668,6 +669,13 @@ p {
     }
 }
 
+
+.card img {
+
+    width: 400px;
+    height: 450px
+
+}
 
 /* Para telas muito pequenas (menos que 480px) */
 @media (max-width: 480px) {
