@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Gustavo Lanjoni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -29,7 +31,8 @@
     <section class="main-section">
         <div class="container">
             <h1>Bem-vindo ao meu Portfólio</h1>
-            <p>Aqui você encontrará projetos que refletem minha dedicação e paixão pela tecnologia. Fique à vontade para
+            <p class="txt-principal">Aqui você encontrará projetos que refletem minha dedicação e paixão pela
+                tecnologia. Fique à vontade para
                 explorar, conhecer mais sobre o meu trabalho e descobrir como a programação pode transformar ideias em
                 soluções. 😊</p>
         </div>
@@ -41,10 +44,11 @@
         <div class="container">
             <h2>Sobre Mim</h2>
             <div class="about-container">
-                <img src="foto.jpg" alt="Foto de Gustavo Lanjoni" class="about-image">
+                <img src="foto.jpg" alt="Foto de Gustavo Lanjoni" class="about-image"> <!-- LinkedIn -->
+
                 <p>Meu nome é Gustavo Lanjoni, tenho 19 anos e sou de Cosmorama-Sp. Desde criança, sempre fui fascinado
                     por computadores e tecnologia, o que me levou a escolher uma carreira na área de informática e
-                    programação. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Estácio, onde
+                    programação. Atualmente, estou cursando Engenharia de Software na Estácio, onde
                     aprofundo meu conhecimento em desenvolvimento de software.
                     Sou um desenvolvedor apaixonado por criar soluções inovadoras, com foco em simplicidade e
                     funcionalidade. Busco sempre desafios que me permitam crescer e aprimorar minhas habilidades.</p>
@@ -102,10 +106,7 @@
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
                         <p>Spring Boot</p>
                     </div>
-                    <div class="linguagem">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-                        <p>PHP</p>
-                    </div>
+
                 </div>
             </div>
 
@@ -128,71 +129,88 @@
     </section>
 
     <!-- Seção Projetos -->
-    <section id="projetos" class="section">
-        <div class="container">
-            <h2>Meus Projetos</h2>
+<section id="projetos" class="section">
+    <div class="container">
+        <h2> Meus Projetos</h2>
 
+        <div class="projects-grid">
             <!-- Projeto 1 -->
             <div class="card">
                 <h3>Blog - LanTech Programming</h3>
-                <!-- Adicionando imagem do projeto -->
                 <img src="blog.png" alt="Imagem do Projeto 1" class="project-img">
-                <p>Esse blog, esta sendo feito pensando na comunidade de programadores! </p>
-                <!-- Botão que redireciona para o projeto -->
-                <a href="https://techlan-programming.netlify.app" class="btn" target="_blank">Ver Projeto</a>
+                <p>Esse blog está sendo feito pensando na comunidade de programadores! 🧑‍💻</p>
+                <div class="icons">
+                    <i class="fab fa-html5" style="color: #e34f26;"></i>
+                    <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+                    <i class="fab fa-js" style="color: #f7df1e;"></i>
+                </div>
+                <a href="https://techlan-programming.netlify.app" class="btn" target="_blank">Projeto em andamento</a>
             </div>
 
             <!-- Projeto 2 -->
             <div class="card">
                 <h3>GelaAr Ar-condicionado</h3>
-                <!-- Adicionando imagem do projeto -->
                 <img src="gelaar.png" alt="Imagem do Projeto 2" class="project-img">
-                <p>Site para um instalador de ar-condicionado, apresentando os tipos de serviços, porque escolher a Gela Ar. Etc!<br> 
-                    Usamos as linguagem Html, Css, JavaScript </p>
-                <!-- Botão que redireciona para o projeto -->
+                <p>Site para um instalador de ar-condicionado, apresentando serviços e diferenciais da GelaAr! ❄️</p>
+                <div class="icons">
+                    <i class="fab fa-html5" style="color: #e34f26;"></i>
+                    <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+                    <i class="fab fa-js" style="color: #f7df1e;"></i>
+                </div>
                 <a href="https://gelarcondicionado.netlify.app" class="btn" target="_blank">Ver Projeto</a>
             </div>
 
-            <!--Online Shoope-->
+            <!-- Projeto 3 -->
             <div class="card">
                 <h3>Online Shoope</h3>
-                <!-- Adicionando imagem do projeto -->
                 <img src="onlineShope.png" alt="onlineShope" class="project-img">
-                <p><br> 
-                    Usamos as linguagem Html, Css, JavaScript e Mysql para o bancod de dados</p>
-                <!-- Botão que redireciona para o projeto -->
+                <p>Loja online desenvolvida com integração a banco de dados. 🛒</p>
+                <div class="icons">
+                    
+                    <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+                </div>
                 <a href="https://onlineshopacessorios.com" class="btn" target="_blank">Ver Projeto</a>
             </div>
 
+            <!-- Projeto 4 -->
             <div class="card">
                 <h3>Tecudi</h3>
-                <!-- Adicionando imagem do projeto -->
-                <img src="tecudi.png" alt="Imagem do Projeto 2" class="project-img">
-                <p>Site mais para dropship!<br> 
-                    Usamos as linguagem Html, Css, JavaScript banco de dados também, quase igual a cima diferença e desiger e produtos  </p>
-                <!-- Botão que redireciona para o projeto -->
+                <img src="tecudi.png" alt="Imagem do Projeto" class="project-img">
+                <p>Site para dropshipping com um design moderno e banco de dados. 📦</p>
+                <div class="icons">
+                   
+                    <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+                </div>
                 <a href="https://tecudi.com" class="btn" target="_blank">Ver Projeto</a>
             </div>
 
+            <!-- Projeto 5 -->
             <div class="card">
-                <h3>TrafegoSupremo</h3>
-                <!-- Adicionando imagem do projeto -->
-                <img src="trafegosupremo.png" alt="Imagem do Projeto 1" class="project-img">
-                <p>Exemplo de pagina de vendas!</p>
-                <!-- Botão que redireciona para o projeto -->
+                <h3>Tráfego Supremo</h3>
+                <img src="trafegosupremo.png" alt="Imagem do Projeto" class="project-img">
+                <p>Página de vendas otimizada para alta conversão! 📈</p>
+                <div class="icons">
+                
+                    <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+                </div>
                 <a href="https://trafegosupremo.com.br" class="btn" target="_blank">Ver Projeto</a>
             </div>
 
+            <!-- Projeto 6 -->
             <div class="card">
-                <h3>TrafegoSupremo</h3>
-                <!-- Adicionando imagem do projeto -->
-                <img src="babearia.png" alt="Imagem do Projeto 1" class="project-img">
-                <p>Exemplo de pagina de vendas para Barbearia!</p>
-                <!-- Botão que redireciona para o projeto -->
+                <h3>Barbearia</h3>
+                <img src="babearia.png" alt="Imagem do Projeto" class="project-img">
+                <p>Landing page para barbearia profissional! ✂️</p>
+                <div class="icons">
+                    
+                    <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+                </div>
                 <a href="https://cursobarber.com.br" class="btn" target="_blank">Ver Projeto</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 
     <!-- Seção Contato -->
@@ -200,6 +218,7 @@
         <div class="container">
             <h2>Blog - Lantech</h2>
             <p>Conecte-se comigo pelas redes sociais ou envie um e-mail!</p>
+            
 
             <!-- Botão para acessar o blog -->
             <div class="blog-button">
@@ -213,23 +232,23 @@
                 <div class="post-card">
                     <a
                         href="https://www.instagram.com/p/DC_94j4pctl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
-                            src="Java X JavaScript.png" alt="Imagem do post 1"></a>
-                    <h3>Java x JavaScript</h3>
-                    <p>Qual a diferença entre essas duas linguagem! </p>
+                            src="image (2).png" alt="Imagem do post 1" ></a>
+                    <h3>Desenvolvimento Web com Frameworks </h3>
+                    <p>Frameworks como React e Vue.js agilizam o desenvolvimento, criando aplicações mais rápidas e escaláveis com menos código.</p>
                 </div>
                 <!-- Post 2 -->
                 <div class="post-card">
                     <a
                         href="https://www.instagram.com/p/DDezk3ex57d/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
-                            src="5 Dicas Para Aprender Programação.png" alt="Imagem do post 2"></a>
-                    <h3>5 Dicas para aprender programação</h3>
-                    <p>Dicas incriveis que você pode usar no seu dia a dia para aprender programação</p>
+                            src="cibersegurança.png" alt="Imagem do post 2"></a>
+                    <h3>Segurança e Cibersegurança</h3>
+                    <p>Explorando o mundo da tecnologia com segurança: dicas e recursos para proteger sua jornada na programação.</p>
                 </div>
                 <!-- Post 3 -->
                 <div class="post-card">
                     <a
                         href="https://www.instagram.com/p/DDkNhnRJWqU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
-                            src="GitHub2.png" alt="Imagem do post 3"></a>
+                            src="image.png" alt="Imagem do post 3"></a>
                     <h3>GitHub top! </h3>
                     <p>Como deixar seu GitHub proficional!
                         E mais atrente para os recrutadores.

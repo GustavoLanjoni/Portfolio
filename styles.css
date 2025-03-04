@@ -23,6 +23,11 @@ body {
     z-index: 10;
 }
 
+
+.text-principal {
+    color: white;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -125,6 +130,7 @@ body {
     font-size: 1.5rem;
     opacity: 0;
     animation: fadeIn 2s 1s forwards;
+    color: white;
 }
 
 .background-shape, .background-shape-two {
@@ -179,30 +185,6 @@ h2 {
     animation: fadeIn 2s 0.5s forwards;
 }
 
-.card {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-}
-
-.card h3 {
-    font-size: 1.8rem;
-    color: #00f7ff;
-}
-
-.card p {
-    font-size: 1.1rem;
-    color: #fff;
-    margin-top: 10px;
-}
 
 
 /* Estilos gerais para o rodapé */
@@ -427,113 +409,7 @@ footer {
     margin-top: 10px;
 }
 
-/* Animações */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Seção Projetos */
-#projetos {
-    padding: 60px 20px;
-    background: #141414; /* Fundo escuro - #141414 */
-    color: #fff;
-}
-
-#projetos .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#projetos h2 {
-    font-size: 3rem;
-    margin-bottom: 50px;
-    color: #00f7ff; /* Azul neon */
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(0, 247, 255, 0.8), 0 0 20px rgba(0, 247, 255, 0.6);
-}
-
-.card {
-    background: #222; /* Fundo escuro nos cards */
-    border-radius: 10px;
-    box-shadow: 0 10px 40px rgba(0, 247, 255, 0.2); /* Azul neon */
-    margin: 20px 0;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    
-}
-
-.card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 15px 50px rgba(0, 247, 255, 0.4); /* Azul neon */
-}
-
-.card h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #fff;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.project-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
-
-
-
-.card p {
-    font-size: 1.1rem;
-    color: #ccc;
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    font-size: 1.2rem;
-    background: linear-gradient(135deg, #00f7ff, #00b3ff); /* Azul neon */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    border: 2px solid #00f7ff; /* Azul neon */
-}
-
-.btn:hover {
-    background: linear-gradient(135deg, #00f7ff, #00b3ff); /* Azul neon - sem mudança */
-    color: #fff; /* Cor original do texto */
-    border: 2px solid #00f7ff; /* Azul neon - sem mudança */
-    transform: scale(1); /* Nenhuma transformação */
-}
-
-
-
-.card:hover::before {
-    opacity: 0.2; /* Manter a opacidade original */
-}
 
 
 
@@ -666,6 +542,94 @@ p {
         opacity: 1;
     }
 }
+
+/* Estilização da seção de projetos */
+#projetos {
+    background-color: #121212; /* Fundo escuro para contraste */
+    color: #ffffff; /* Texto branco */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    color: ;
+    transition: color 0.3s ease;
+}
+
+.icons i:hover {
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    background: #f8c44c;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffdf7e;
+}
+
+
 
 /* Para telas muito pequenas (menos que 480px) */
 @media (max-width: 480px) {
