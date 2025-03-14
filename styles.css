@@ -985,3 +985,50 @@ p {
     }
 }
  
+
+
+
+
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.icons {
+    margin: 10px 0;
+}
+
+.icons i {
+    margin: 0 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #f8bd34;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #daa325;
+}

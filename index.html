@@ -62,10 +62,10 @@
             <h2>Minhas Skills</h2>
 
             <!-- Abas -->
-            <div class="tabs">
-                <button class="tab-button active" onclick="openTab('frontend')">Front-End</button>
-                <button class="tab-button" onclick="openTab('backend')">Back-End</button>
-                <button class="tab-button" onclick="openTab('database')">Banco de Dados</button>
+            <div class="tabs" id="tabs-habilidades">
+                <button class="tab-button active" onclick="openTab('frontend', 'habilidades')">Front-End</button>
+                <button class="tab-button" onclick="openTab('backend', 'habilidades')">Back-End</button>
+                <button class="tab-button" onclick="openTab('database', 'habilidades')">Banco de Dados</button>
             </div>
 
             <!-- Conteúdo das Abas -->
@@ -73,7 +73,6 @@
                 <div class="linguagens-container">
                     <div class="linguagem">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-
                         <p>HTML</p>
                     </div>
                     <div class="linguagem">
@@ -88,7 +87,6 @@
                     <div class="linguagem">
                         <img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
-
                         <p>Angular</p>
                     </div>
                 </div>
@@ -98,7 +96,6 @@
                 <div class="linguagens-container">
                     <div class="linguagem">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-
                         <p>Java</p>
                     </div>
                     <div class="linguagem">
@@ -106,7 +103,6 @@
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
                         <p>Spring Boot</p>
                     </div>
-
                 </div>
             </div>
 
@@ -115,7 +111,6 @@
                     <div class="linguagem">
                         <img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-
                         <p>MySQL</p>
                     </div>
                     <div class="linguagem">
@@ -129,90 +124,100 @@
     </section>
 
     <!-- Seção Projetos -->
-<section id="projetos" class="section">
-    <div class="container">
-        <h2> Meus Projetos</h2>
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2> Meus Projetos</h2>
 
-        <div class="projects-grid">
-            <!-- Projeto 1 -->
-            <div class="card">
-                <h3>Blog - LanTech Programming</h3>
-                <img src="blog.png" alt="Imagem do Projeto 1" class="project-img">
-                <p>Esse blog está sendo feito pensando na comunidade de programadores! 🧑‍💻</p>
-                <div class="icons">
-                    <i class="fab fa-html5" style="color: #e34f26;"></i>
-                    <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
-                    <i class="fab fa-js" style="color: #f7df1e;"></i>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" width="30px">
-
-
-                </div>
-                <a href="https://techlanprogramming.netlify.app/" class="btn" target="_blank">Projeto em andamento</a>
+            <!-- Abas -->
+            <div class="tabs" id="tabs-projetos">
+                <button class="tab-button active" onclick="openTab('paginaWeb', 'projetos')">Página Web</button>
+                <button class="tab-button" onclick="openTab('sistemas', 'projetos')">Sistemas</button>
+                <button class="tab-button" onclick="openTab('wordpress', 'projetos')">WordPress</button>
             </div>
 
-            <!-- Projeto 2 -->
-            <div class="card">
-                <h3>GelaAr Ar-condicionado</h3>
-                <img src="gelaar.png" alt="Imagem do Projeto 2" class="project-img">
-                <p>Site para um instalador de ar-condicionado, apresentando serviços e diferenciais da GelaAr! ❄️</p>
-                <div class="icons">
-                    <i class="fab fa-html5" style="color: #e34f26;"></i>
-                    <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
-                    <i class="fab fa-js" style="color: #f7df1e;"></i>
+            <!-- Conteúdo das Abas -->
+            <div id="paginaWeb" class="tab-content active">
+                <div class="projects-grid">
+                    <div class="card">
+                        <h3>Blog - LanTech Programming</h3>
+                        <img src="blog.png" alt="Imagem do Projeto 1" class="project-img">
+                        <p>Esse blog está sendo feito pensando na comunidade de programadores! 🧑‍💻</p>
+                        <div class="icons">
+                            <i class="fab fa-html5" style="color: #e34f26;"></i>
+                            <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+                            <i class="fab fa-js" style="color: #f7df1e;"></i>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB Logo" width="30px">
+                        </div>
+                        <a href="https://techlanprogramming.netlify.app/" class="btn" target="_blank">Projeto em
+                            andamento</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>GelaAr Ar-condicionado</h3>
+                        <img src="gelaar.png" alt="Imagem do Projeto 2" class="project-img">
+                        <p>Site para um instalador de ar-condicionado, apresentando serviços e diferenciais da GelaAr!
+                            ❄️</p>
+                        <div class="icons">
+                            <i class="fab fa-html5" style="color: #e34f26;"></i>
+                            <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+                            <i class="fab fa-js" style="color: #f7df1e;"></i>
+                        </div>
+                        <a href="https://gelarcondicionado.netlify.app" class="btn" target="_blank">Ver Projeto</a>
+                    </div>
                 </div>
-                <a href="https://gelarcondicionado.netlify.app" class="btn" target="_blank">Ver Projeto</a>
             </div>
 
-            <!-- Projeto 3 -->
-            <div class="card">
-                <h3>Online Shoope</h3>
-                <img src="onlineShope.png" alt="onlineShope" class="project-img">
-                <p>Loja online desenvolvida com integração a banco de dados. 🛒</p>
-                <div class="icons">
-                    
-                    <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+            <div id="sistemas" class="tab-content">
+                <div class="projects-grid">
+                    <div class="card">
+                        <h3>Online Shoope</h3>
+                        <img src="onlineShope.png" alt="onlineShope" class="project-img">
+                        <p>Loja online desenvolvida com integração a banco de dados. 🛒</p>
+                        <div class="icons">
+                            <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+                        </div>
+                        <a href="https://onlineshopacessorios.com" class="btn" target="_blank">Ver Projeto</a>
+                    </div>
                 </div>
-                <a href="https://onlineshopacessorios.com" class="btn" target="_blank">Ver Projeto</a>
             </div>
 
-            <!-- Projeto 4 -->
-            <div class="card">
-                <h3>Tecudi</h3>
-                <img src="tecudi.png" alt="Imagem do Projeto" class="project-img">
-                <p>Site para dropshipping com um design moderno e banco de dados. 📦</p>
-                <div class="icons">
-                   
-                    <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+            <div id="wordpress" class="tab-content">
+                <div class="projects-grid">
+                    <div class="card">
+                        <h3>Tecudi</h3>
+                        <img src="tecudi.png" alt="Imagem do Projeto" class="project-img">
+                        <p>Site para dropshipping com um design moderno e banco de dados. 📦</p>
+                        <div class="icons">
+                            <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+                        </div>
+                        <a href="https://tecudi.com" class="btn" target="_blank">Ver Projeto</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Tráfego Supremo</h3>
+                        <img src="trafegosupremo.png" alt="Imagem do Projeto" class="project-img">
+                        <p>Página de vendas otimizada para alta conversão! 📈</p>
+                        <div class="icons">
+                            <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+                        </div>
+                        <a href="https://trafegosupremo.com.br" class="btn" target="_blank">Ver Projeto</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Barbearia</h3>
+                        <img src="babearia.png" alt="Imagem do Projeto" class="project-img">
+                        <p>Landing page para barbearia profissional! ✂️</p>
+                        <div class="icons">
+                            <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
+                        </div>
+                        <a href="https://cursobarber.com.br" class="btn" target="_blank">Ver Projeto</a>
+                    </div>
                 </div>
-                <a href="https://tecudi.com" class="btn" target="_blank">Ver Projeto</a>
             </div>
 
-            <!-- Projeto 5 -->
-            <div class="card">
-                <h3>Tráfego Supremo</h3>
-                <img src="trafegosupremo.png" alt="Imagem do Projeto" class="project-img">
-                <p>Página de vendas otimizada para alta conversão! 📈</p>
-                <div class="icons">
-                
-                    <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
-                </div>
-                <a href="https://trafegosupremo.com.br" class="btn" target="_blank">Ver Projeto</a>
-            </div>
-
-            <!-- Projeto 6 -->
-            <div class="card">
-                <h3>Barbearia</h3>
-                <img src="babearia.png" alt="Imagem do Projeto" class="project-img">
-                <p>Landing page para barbearia profissional! ✂️</p>
-                <div class="icons">
-                    
-                    <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
-                </div>
-                <a href="https://cursobarber.com.br" class="btn" target="_blank">Ver Projeto</a>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -221,7 +226,7 @@
         <div class="container">
             <h2>Blog - Lantech</h2>
             <p>Conecte-se comigo pelas redes sociais ou envie um e-mail!</p>
-            
+
 
             <!-- Botão para acessar o blog -->
             <div class="blog-button">
@@ -235,9 +240,10 @@
                 <div class="post-card">
                     <a
                         href="https://www.instagram.com/p/DC_94j4pctl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
-                            src="image (2).png" alt="Imagem do post 1" ></a>
+                            src="image (2).png" alt="Imagem do post 1"></a>
                     <h3>Desenvolvimento Web com Frameworks </h3>
-                    <p>Frameworks como React e Vue.js agilizam o desenvolvimento, criando aplicações mais rápidas e escaláveis com menos código.</p>
+                    <p>Frameworks como React e Vue.js agilizam o desenvolvimento, criando aplicações mais rápidas e
+                        escaláveis com menos código.</p>
                 </div>
                 <!-- Post 2 -->
                 <div class="post-card">
@@ -245,7 +251,8 @@
                         href="https://www.instagram.com/p/DDezk3ex57d/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
                             src="cibersegurança.png" alt="Imagem do post 2"></a>
                     <h3>Segurança e Cibersegurança</h3>
-                    <p>Explorando o mundo da tecnologia com segurança: dicas e recursos para proteger sua jornada na programação.</p>
+                    <p>Explorando o mundo da tecnologia com segurança: dicas e recursos para proteger sua jornada na
+                        programação.</p>
                 </div>
                 <!-- Post 3 -->
                 <div class="post-card">
@@ -302,35 +309,34 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 
 
-    <!-- Script JavaScript -->
+    <!-- Script aba de skiils -->
     <script>
-        function openTab(tabName) {
-            // Oculta todas as abas
-            var tabs = document.querySelectorAll('.tab-content');
-            tabs.forEach(function (tab) {
-                tab.classList.remove('active');
+        function openTab(tabName, section) {
+            var tabs = document.querySelectorAll(`#${section} .tab-content`);
+            var buttons = document.querySelectorAll(`#${section} .tab-button`);
+
+            // Esconde todos os conteúdos das abas
+            tabs.forEach(tab => {
+                tab.classList.remove("active");
             });
 
-            // Remove a classe 'active' das abas do menu
-            var tabButtons = document.querySelectorAll('.tab-button');
-            tabButtons.forEach(function (button) {
-                button.classList.remove('active');
+            // Remove a classe 'active' dos botões
+            buttons.forEach(button => {
+                button.classList.remove("active");
             });
 
-            // Exibe a aba correspondente
-            document.getElementById(tabName).classList.add('active');
+            // Mostra o conteúdo da aba clicada
+            document.getElementById(tabName).classList.add("active");
 
-            // Marca o botão da aba ativa
-            var activeButton = document.querySelector('[onclick="openTab(\'' + tabName + '\')"]');
-            activeButton.classList.add('active');
+            // Adiciona a classe 'active' no botão da aba clicada
+            event.currentTarget.classList.add("active");
         }
 
-        // Define a aba "Front-End" como padrão
-        openTab('frontend');
     </script>
-    <script src="script.js"></script>
+
 </body>
 
 </html>

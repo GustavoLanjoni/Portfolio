@@ -33,3 +33,6 @@ document.addEventListener('mousemove', (e) => {
     // Criar o rastro de luz
     createTrail(x, y);
 });
+
+
+
