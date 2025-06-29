@@ -235,7 +235,7 @@
     <div class="card-preco" data-servico="social-media">
       <i class="fas fa-bullhorn"></i>
       <h3>Social Media</h3>
-      <p class="valor">R$ 250</p>
+      <p class="valor">R$ 450</p>
       <p>Pacote com 10 artes otimizadas para Instagram e Facebook.</p>
       <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
@@ -243,7 +243,7 @@
     <div class="card-preco" data-servico="banner-web">
       <i class="fas fa-image"></i>
       <h3>Banner Web</h3>
-      <p class="valor">R$ 120</p>
+      <p class="valor">R$ 200</p>
       <p>Banner profissional para divulgação online.</p>
       <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
@@ -251,7 +251,7 @@
     <div class="card-preco" data-servico="pagina-vendas">
       <i class="fas fa-mouse-pointer"></i>
       <h3>Página de Vendas</h3>
-      <p class="valor">R$ 790</p>
+      <p class="valor">R$ 1.200</p>
       <p>Landing page moderna para conversão de clientes.</p>
       <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
@@ -259,7 +259,7 @@
     <div class="card-preco" data-servico="ecommerce">
       <i class="fas fa-store"></i>
       <h3>Loja E-commerce</h3>
-      <p class="valor">R$ 1290</p>
+      <p class="valor">R$ 2.500</p>
       <p>Loja virtual com carrinho, categorias e painel de controle.</p>
       <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
@@ -267,7 +267,7 @@
     <div class="card-preco" data-servico="datas">
       <i class="fas fa-calendar-alt"></i>
       <h3>Atualização de Datas</h3>
-      <p class="valor">R$ 90</p>
+      <p class="valor">R$ 150</p>
       <p>Artes comemorativas ou banners especiais por temporada.</p>
       <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
@@ -275,7 +275,7 @@
     <div class="card-preco" data-servico="identidade-visual">
       <i class="fas fa-palette"></i>
       <h3>Identidade Visual</h3>
-      <p class="valor">R$ 690</p>
+      <p class="valor">R$ 1.000</p>
       <p>Logo, paleta de cores e fontes para destacar sua marca.</p>
       <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
@@ -283,7 +283,7 @@
     <div class="card-preco" data-servico="seo">
       <i class="fas fa-search-dollar"></i>
       <h3>Otimização SEO</h3>
-      <p class="valor">R$ 320</p>
+      <p class="valor">R$ 600</p>
       <p>Seu site posicionado no Google com estratégias de SEO.</p>
       <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
@@ -291,7 +291,7 @@
     <div class="card-preco" data-servico="whatsapp">
       <i class="fas fa-comments"></i>
       <h3>Integração WhatsApp</h3>
-      <p class="valor">R$ 180</p>
+      <p class="valor">R$ 300</p>
       <p>Botões para contato direto via WhatsApp, Instagram, etc.</p>
       <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
@@ -309,6 +309,19 @@
   </div>
 </div>
 
+<!-- Modal Formulário Contratar -->
+<div id="modal-contratar" class="modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index:1100;">
+  <div class="modal-content" style="background:#eef1e6; border-radius:14px; max-width:400px; width:90%; padding:2rem; position:relative;">
+    <button class="modal-close" id="fechar-contratar" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:1.3rem; cursor:pointer;">×</button>
+    <h3 style="color:#5c6b31; margin-bottom:1rem;">Solicitar Orçamento</h3>
+    <form id="form-contratar" style="display:flex; flex-direction:column; gap:1rem;">
+      <input type="text" name="nomeUsuario" placeholder="Seu nome" required style="padding:0.7rem; border-radius:8px; border:1.5px solid #9ba282; font-family:inherit; font-size:1rem;">
+      <input type="text" name="ramoEmpresa" placeholder="Ramo da empresa" required style="padding:0.7rem; border-radius:8px; border:1.5px solid #9ba282; font-family:inherit; font-size:1rem;">
+      <textarea name="detalhesProjeto" placeholder="Detalhes do projeto" rows="4" required style="padding:0.7rem; border-radius:8px; border:1.5px solid #9ba282; font-family:inherit; font-size:1rem; resize: vertical;"></textarea>
+      <button type="submit" style="background:#5c6b31; color:#fff; border:none; border-radius:14px; padding:0.7rem; font-weight:700; cursor:pointer; font-size:1rem;">Enviar via WhatsApp</button>
+    </form>
+  </div>
+</div>
 
   
 
@@ -411,7 +424,6 @@
 <script src="js/animacao.js"></script>
 <script src="js/faq.js"></script>
 <script src="js/orcamento.js"></script>
-
 
 
 
