@@ -485,6 +485,58 @@
 }
 
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none; /* Oculto por padrão */
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 14px;
+  max-width: 480px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(92,107,49,0.3);
+  color: #4b5139;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #5c6b31;
+}
+
+#btn-contratar {
+  margin-top: 2rem;
+  background-color: #5c6b31;
+  color: #f9faf7;
+  border: none;
+  border-radius: 14px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#btn-contratar:hover {
+  background-color: #76894c;
+}
+
+
+
 /* Responsivo */
 @media (max-width: 720px) {
   .cards-precos {

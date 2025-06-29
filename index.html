@@ -222,7 +222,7 @@
       <h3>Social Media</h3>
       <p class="valor">R$ 250</p>
       <p>Pacote com 10 artes otimizadas para Instagram e Facebook.</p>
-      <button>Contratar</button>
+      <button>Ver Detalhes</button>
     </div>
 
     <div class="card-preco">
@@ -230,7 +230,7 @@
       <h3>Banner Web</h3>
       <p class="valor">R$ 120</p>
       <p>Banner profissional para divulgação online.</p>
-      <button>Contratar</button>
+      <button>Ver Detalhes</button>
     </div>
 
     <div class="card-preco">
@@ -238,7 +238,7 @@
       <h3>Página de Vendas</h3>
       <p class="valor">R$ 790</p>
       <p>Landing page moderna para conversão de clientes.</p>
-      <button>Contratar</button>
+      <button>Ver Detalhes</button>
     </div>
 
     <div class="card-preco">
@@ -246,7 +246,7 @@
       <h3>Loja E-commerce</h3>
       <p class="valor">R$ 1290</p>
       <p>Loja virtual com carrinho, categorias e painel de controle.</p>
-      <button>Contratar</button>
+      <button>Ver Detalhes</button>
     </div>
 
     <div class="card-preco">
@@ -254,7 +254,7 @@
       <h3>Atualização de Datas</h3>
       <p class="valor">R$ 90</p>
       <p>Artes comemorativas ou banners especiais por temporada.</p>
-      <button>Contratar</button>
+      <button>Ver Detalhes</button>
     </div>
 
     <div class="card-preco">
@@ -262,7 +262,7 @@
       <h3>Identidade Visual</h3>
       <p class="valor">R$ 690</p>
       <p>Logo, paleta de cores e fontes para destacar sua marca.</p>
-      <button>Contratar</button>
+      <button>Ver Detalhes</button>
     </div>
 
     <div class="card-preco">
@@ -270,7 +270,7 @@
       <h3>Otimização SEO</h3>
       <p class="valor">R$ 320</p>
       <p>Seu site posicionado no Google com estratégias de SEO.</p>
-      <button>Contratar</button>
+      <button>Ver Detalhes</button>
     </div>
 
     <div class="card-preco">
@@ -278,11 +278,21 @@
       <h3>Integração WhatsApp</h3>
       <p class="valor">R$ 180</p>
       <p>Botões para contato direto via WhatsApp, Instagram, etc.</p>
-      <button>Contratar</button>
+      <button>Ver Detalhes</button>
     </div>
 
   </div>
 </section>
+
+<!-- Modal para detalhes -->
+<div id="modal-servico" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h3 id="modal-titulo"></h3>
+    <p id="modal-descricao"></p>
+    <button id="btn-contratar">Contratar</button>
+  </div>
+</div>
 
 
   
@@ -385,6 +395,7 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
+<script src="js/modal.js"></script>
 
 <script>
   function smoothScrollTo(target, duration = 1000) {
