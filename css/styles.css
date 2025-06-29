@@ -189,71 +189,294 @@
     color: #5c6b31;
   }
 
+  .zoom-motivo .motivo-card {
+  transition: transform 0.4s ease;
+}
+.zoom-motivo .motivo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 40px rgba(75,81,57,0.2);
+}
+
+/*Motivo para ter um site*/
+.section-motivo h2 {
+  font-size: 2.2rem;
+  color: #5c6b31;
+  margin-bottom: 3rem;
+  animation: fadeInDown 1s ease forwards;
+}
+.cards-motivo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.motivo-card {
+  background: #fff;
+  border: 1px solid #dfe4cc;
+  border-radius: 16px;
+  padding: 2rem 1.2rem;
+  box-shadow: 0 6px 18px rgba(92,107,49,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+}
+.motivo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(92,107,49,0.2);
+}
+.motivo-card i {
+  font-size: 2.5rem;
+  color: #5c6b31;
+  margin-bottom: 1rem;
+}
+.motivo-card h3 {
+  font-size: 1.2rem;
+  color: #4b5139;
+  margin-bottom: 0.5rem;
+}
+.motivo-card p {
+  font-size: 0.95rem;
+  color: #76894c;
+}
+.motivo-card.negativo {
+  background: #fff5f5;
+  border: 1.5px solid #f4cccc;
+}
+.motivo-card.negativo i {
+  color: #cc0000;
+}
+.motivo-card.negativo h3 {
+  color: #a10000;
+}
+.motivo-card.negativo p {
+  color: #800000;
+}
+
+/* Animações suaves */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
   /* Projetos em grid cards */
   #projetos {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 50px;
+}
+
+#projetos h2 {
+  color: #5c6b31;
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+/* Estilo das abas */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: #eef1e6;
+  border: 2px solid #5c6b31;
+  color: #5c6b31;
+  padding: 0.5rem 1.2rem;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #dce4c6;
+}
+
+.tab-button.active {
+  background-color: #5c6b31;
+  color: #f9faf7;
+}
+
+/* Conteúdo da aba (oculto por padrão) */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Aba ativa exibida */
+.tab-content.active {
+  display: block;
+}
+
+/* Grid dos projetos */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 1.8rem;
+}
+
+/* Cards dos projetos */
+.projeto-card {
+  background: #eef1e6;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(92,107,49,0.15);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projeto-card:hover {
+  box-shadow: 0 14px 36px rgba(92,107,49,0.32);
+}
+
+.projeto-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid #5c6b31;
+}
+
+.projeto-info {
+  padding: 1rem 1.2rem;
+}
+
+.projeto-info h3 {
+  font-size: 1.25rem;
+  color: #5c6b31;
+  margin-bottom: 0.4rem;
+}
+
+.projeto-info p {
+  font-size: 0.9rem;
+  color: #76894c;
+  margin-bottom: 1rem;
+}
+
+.btn-ver-projeto {
+  background-color: #5c6b31;
+  color: #f9faf7;
+  border: none;
+  border-radius: 14px;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0 1.2rem 1.2rem;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn-ver-projeto:hover {
+  background-color: #76894c;
+}
+
+/* Animação fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  #projetos h2 {
-    color: #5c6b31;
-    font-size: 2rem;
-    margin-bottom: 1.8rem;
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .projetos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
-    gap: 1.8rem;
-  }
-  .projeto-card {
-    background: #eef1e6;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 8px 22px rgba(92,107,49,0.15);
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
-    display: flex;
+}
+
+
+.precos-compacto {
+  padding: 3rem 1.5rem;
+  background: #f9faf7;
+  text-align: center;
+}
+
+.precos-compacto h2 {
+  font-size: 2rem;
+  color: #4b5139;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.cards-precos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card-preco {
+  background: #fff;
+  border: 2px solid #d6dbbf;
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  width: 220px;
+  box-shadow: 0 4px 16px rgba(92,107,49,0.1);
+  transition: 0.3s ease;
+}
+.card-preco:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 26px rgba(92,107,49,0.25);
+}
+
+.card-preco i {
+  font-size: 2rem;
+  color: #5c6b31;
+  margin-bottom: 0.6rem;
+}
+
+.card-preco h3 {
+  font-size: 1.2rem;
+  color: #4b5139;
+  margin-bottom: 0.2rem;
+}
+
+.card-preco .valor {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #76894c;
+  margin: 0.3rem 0;
+}
+
+.card-preco p {
+  font-size: 0.85rem;
+  color: #6e7a43;
+  margin-bottom: 0.9rem;
+}
+
+.card-preco button {
+  background: #5c6b31;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.card-preco button:hover {
+  background: #76894c;
+}
+
+/* Responsivo */
+@media (max-width: 720px) {
+  .cards-precos {
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
   }
-  .projeto-card:hover {
-    box-shadow: 0 14px 36px rgba(92,107,49,0.32);
-  }
-  .projeto-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    display: block;
-    border-bottom: 2px solid #5c6b31;
-  }
-  .projeto-info {
-    padding: 1rem 1.2rem;
-  }
-  .projeto-info h3 {
-    font-size: 1.25rem;
-    color: #5c6b31;
-    margin-bottom: 0.4rem;
-  }
-  .projeto-info p {
-    font-size: 0.9rem;
-    color: #76894c;
-    margin-bottom: 1rem;
-  }
-  .btn-ver-projeto {
-    background-color: #5c6b31;
-    color: #f9faf7;
-    border: none;
-    border-radius: 14px;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-    font-size: 0.9rem;
-    cursor: pointer;
-    margin: 0 1.2rem 1.2rem;
-    transition: background-color 0.3s ease;
-    align-self: flex-start;
-  }
-  .btn-ver-projeto:hover {
-    background-color: #76894c;
-  }
+}
+
+
 
   /* FAQ estilo acordeão simples */
   #faq {
@@ -387,3 +610,4 @@
 .whatsapp-float:hover {
   background-color: #388e3c;
 }
+

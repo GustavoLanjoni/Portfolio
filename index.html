@@ -40,45 +40,268 @@
       </div>
     </section>
 
-    <section id="servicos">
-      <h2>Serviços</h2>
-      <div class="servico-card"><i class="fas fa-paint-brush"></i> Design Personalizado</div>
-      <div class="servico-card"><i class="fas fa-calendar-alt"></i> Atualização de Datas Comemorativas</div>
-      <div class="servico-card"><i class="fas fa-file-code"></i> Landing Pages</div>
-      <div class="servico-card"><i class="fas fa-shopping-cart"></i> Loja E-commerce</div>
-      <div class="servico-card"><i class="fas fa-briefcase"></i> Portfólio Profissional</div>
-    </section>
-  </section>
+<section id="estatisticas">
+  <h2>Resultados que entregamos</h2>
+  <div id="servicos" class="estatisticas-reutilizadas">
+    
+    <div class="servico-card">
+      <i class="fas fa-rocket fa-2x"></i>
+      <div>
+        <div class="numero" data-numero="42">0</div>
+        <p>Projetos Concluídos</p>
+      </div>
+    </div>
+
+    <div class="servico-card">
+      <i class="fas fa-users fa-2x"></i>
+      <div>
+        <div class="numero" data-numero="28">0</div>
+        <p>Clientes Atendidos</p>
+      </div>
+    </div>
+
+    <div class="servico-card">
+      <i class="fas fa-clock fa-2x"></i>
+      <div>
+        <div class="numero" data-numero="3">0</div>
+        <p>dias de média de entrega</p>
+      </div>
+    </div>
+
+    <div class="servico-card">
+      <i class="fas fa-star fa-2x"></i>
+      <div>
+        <div class="numero" data-numero="100">0</div>
+        <p>% de Avaliações Positivas</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="motivo" class="section-motivo">
+  <h2>Por que seu negócio precisa de um site?</h2>
+  <div class="cards-motivo">
+
+    <div class="motivo-card">
+      <i class="fas fa-globe"></i>
+      <h3>Presença Online 24h</h3>
+      <p>Seus clientes podem te encontrar a qualquer momento, mesmo fora do horário comercial.</p>
+    </div>
+
+    <div class="motivo-card">
+      <i class="fas fa-user-shield"></i>
+      <h3>Mais Credibilidade</h3>
+      <p>Um site bem feito transmite confiança e profissionalismo para quem visita.</p>
+    </div>
+
+    <div class="motivo-card">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Marketing Orgânico</h3>
+      <p>Você pode ser encontrado no Google, sem depender apenas de redes sociais.</p>
+    </div>
+
+    <div class="motivo-card">
+      <i class="fas fa-chart-line"></i>
+      <h3>Vendas e Resultados</h3>
+      <p>Transforme visitantes em clientes com páginas otimizadas para conversão.</p>
+    </div>
+
+    <div class="motivo-card">
+  <i class="fas fa-laptop-code"></i>
+  <h3>Controle Total</h3>
+  <p>Diferente das redes sociais, você tem liberdade total para personalizar e escalar seu site.</p>
+</div>
+
+<div class="motivo-card">
+  <i class="fas fa-search-dollar"></i>
+  <h3>Mais Retorno por Investimento</h3>
+  <p>Um site otimizado gera leads, vendas e aumenta o valor percebido do seu negócio.</p>
+</div>
+
+<div class="motivo-card">
+  <i class="fas fa-users"></i>
+  <h3>Alcance Novos Públicos</h3>
+  <p>Amplie seu alcance além da sua região ou cidade e atinja clientes em potencial em qualquer lugar.</p>
+</div>
+
+
+    <div class="motivo-card negativo">
+      <i class="fas fa-times-circle"></i>
+      <h3>Sem site = Perda</h3>
+      <p>Sem um site, seu negócio perde visibilidade, autoridade e oportunidades reais.</p>
+    </div>
+
+  </div>
+</section>
+
 
   <section id="projetos">
-    <h2>Projetos</h2>
+  <h2>Projetos</h2>
+
+  <!-- Abas -->
+  <div class="tabs">
+    <button class="tab-button active" data-tab="web">Web</button>
+    <button class="tab-button" data-tab="sistemas">Sistemas</button>
+    <button class="tab-button" data-tab="landing">Landing Pages</button>
+    <button class="tab-button" data-tab="loja">Loja</button>
+    <button class="tab-button" data-tab="vendas">Páginas de Vendas</button>
+  </div>
+
+  <!-- Conteúdo das abas -->
+  <div class="tab-content active" id="web">
     <div class="projetos-grid">
-      <div class="projeto-card" tabindex="0">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Projeto Portfolio" />
+      <div class="projeto-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Portfolio Web" />
         <div class="projeto-info">
-          <h3>Portfolio Profissional Saúde</h3>
-          <p>Portfolio personalizado, fácil de editar e otimizado para mobile.</p>
-          <button class="btn-ver-projeto" onclick="window.open('https://seuprojetourl.com/portfolio', '_blank')">Ver Projeto</button>
-        </div>
-      </div>
-      <div class="projeto-card" tabindex="0">
-        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80" alt="Projeto Loja E-commerce" />
-        <div class="projeto-info">
-          <h3>Loja E-commerce Fashion</h3>
-          <p>Loja online moderna e intuitiva para seu negócio de moda.</p>
-          <button class="btn-ver-projeto" onclick="window.open('https://seuprojetourl.com/ecommerce', '_blank')">Ver Projeto</button>
-        </div>
-      </div>
-      <div class="projeto-card" tabindex="0">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Projeto Landing Page" />
-        <div class="projeto-info">
-          <h3>Landing Page para Evento</h3>
-          <p>Landing page otimizada para conversão de inscrições e vendas.</p>
-          <button class="btn-ver-projeto" onclick="window.open('https://seuprojetourl.com/landingpage', '_blank')">Ver Projeto</button>
+          <h3>Portfolio Saúde</h3>
+          <p>Site pessoal para profissionais da área da saúde.</p>
+          <button class="btn-ver-projeto" onclick="window.open('#', '_blank')">Ver Projeto</button>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="tab-content" id="sistemas">
+    <div class="projetos-grid">
+      <div class="projeto-card">
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80" alt="Sistema Web" />
+        <div class="projeto-info">
+          <h3>Dashboard de Vendas</h3>
+          <p>Sistema completo com painel de controle e relatórios.</p>
+          <button class="btn-ver-projeto" onclick="window.open('#', '_blank')">Ver Projeto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="landing">
+    <div class="projetos-grid">
+      <div class="projeto-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Landing Page" />
+        <div class="projeto-info">
+          <h3>Landing Page Evento</h3>
+          <p>Página voltada para captação de leads em eventos.</p>
+          <button class="btn-ver-projeto" onclick="window.open('#', '_blank')">Ver Projeto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="loja">
+    <div class="projetos-grid">
+      <div class="projeto-card">
+        <img src="https://images.unsplash.com/photo-1598798855061-0b2a3f457b51?auto=format&fit=crop&w=600&q=80" alt="Loja Online" />
+        <div class="projeto-info">
+          <h3>Loja de Roupas</h3>
+          <p>Loja virtual com carrinho, categorias e checkout.</p>
+          <button class="btn-ver-projeto" onclick="window.open('#', '_blank')">Ver Projeto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="vendas">
+    <div class="projetos-grid">
+      <div class="projeto-card">
+        <img src="https://images.unsplash.com/photo-1612832021247-232104ddc3f2?auto=format&fit=crop&w=600&q=80" alt="Página de Vendas" />
+        <div class="projeto-info">
+          <h3>Página de Vendas</h3>
+          <p>Página com gatilhos mentais, depoimentos e CTA direto.</p>
+          <button class="btn-ver-projeto" onclick="window.open('#', '_blank')">Ver Projeto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos-compacto" class="precos-compacto">
+  <h2>Serviços</h2>
+  <div class="cards-precos">
+
+    <div class="card-preco">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Social Media</h3>
+      <p class="valor">R$ 250</p>
+      <p>Pacote com 10 artes otimizadas para Instagram e Facebook.</p>
+      <button>Contratar</button>
+    </div>
+
+    <div class="card-preco">
+      <i class="fas fa-image"></i>
+      <h3>Banner Web</h3>
+      <p class="valor">R$ 120</p>
+      <p>Banner profissional para divulgação online.</p>
+      <button>Contratar</button>
+    </div>
+
+    <div class="card-preco">
+      <i class="fas fa-mouse-pointer"></i>
+      <h3>Página de Vendas</h3>
+      <p class="valor">R$ 790</p>
+      <p>Landing page moderna para conversão de clientes.</p>
+      <button>Contratar</button>
+    </div>
+
+    <div class="card-preco">
+      <i class="fas fa-store"></i>
+      <h3>Loja E-commerce</h3>
+      <p class="valor">R$ 1290</p>
+      <p>Loja virtual com carrinho, categorias e painel de controle.</p>
+      <button>Contratar</button>
+    </div>
+
+    <div class="card-preco">
+      <i class="fas fa-calendar-alt"></i>
+      <h3>Atualização de Datas</h3>
+      <p class="valor">R$ 90</p>
+      <p>Artes comemorativas ou banners especiais por temporada.</p>
+      <button>Contratar</button>
+    </div>
+
+    <div class="card-preco">
+      <i class="fas fa-palette"></i>
+      <h3>Identidade Visual</h3>
+      <p class="valor">R$ 690</p>
+      <p>Logo, paleta de cores e fontes para destacar sua marca.</p>
+      <button>Contratar</button>
+    </div>
+
+    <div class="card-preco">
+      <i class="fas fa-search-dollar"></i>
+      <h3>Otimização SEO</h3>
+      <p class="valor">R$ 320</p>
+      <p>Seu site posicionado no Google com estratégias de SEO.</p>
+      <button>Contratar</button>
+    </div>
+
+    <div class="card-preco">
+      <i class="fas fa-comments"></i>
+      <h3>Integração WhatsApp</h3>
+      <p class="valor">R$ 180</p>
+      <p>Botões para contato direto via WhatsApp, Instagram, etc.</p>
+      <button>Contratar</button>
+    </div>
+
+  </div>
+</section>
+
+
+  
+
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Nome" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
+
 
   <section id="faq">
   <h2>Perguntas Frequentes</h2>
@@ -136,15 +359,6 @@
 </section>
 
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <form>
-      <input type="text" name="nome" placeholder="Nome" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
 
 </main>
 
@@ -211,6 +425,54 @@
         smoothScrollTo(target, 1500); // 1500ms = 1.5s de rolagem
       }
     });
+  });
+</script>
+
+
+<script>
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.remove('active'));
+
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+<script>
+  function animarNumeros() {
+    const stats = document.querySelectorAll('.numero');
+    stats.forEach(stat => {
+      const target = +stat.getAttribute('data-numero');
+      let contador = 0;
+      const incremento = target / 60;
+
+      const atualizar = () => {
+        contador += incremento;
+        if (contador < target) {
+          stat.textContent = Math.floor(contador);
+          requestAnimationFrame(atualizar);
+        } else {
+          stat.textContent = target;
+        }
+      };
+      atualizar();
+    });
+  }
+
+  let ativado = false;
+  window.addEventListener('scroll', () => {
+    const sec = document.querySelector('#estatisticas');
+    const secTop = sec.getBoundingClientRect().top;
+    if (secTop < window.innerHeight - 100 && !ativado) {
+      ativado = true;
+      animarNumeros();
+    }
   });
 </script>
 
