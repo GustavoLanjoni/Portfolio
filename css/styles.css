@@ -155,6 +155,50 @@
     background: #5c6b31;
   }
 
+  .ferramentas-section {
+  padding-top: 50px;
+}
+
+.ferramentas-section h2 {
+  font-size: 2rem;
+  color: #5c6b31;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.ferramentas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.ferramenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.ferramenta img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.ferramenta p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #4b5139;
+  font-weight: 600;
+}
+
+.ferramenta img:hover {
+  transform: scale(1.2);
+}
+
+
   /* Serviços em cards */
   #servicos {
     flex: 1 1 420px;

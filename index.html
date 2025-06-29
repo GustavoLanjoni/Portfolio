@@ -34,7 +34,11 @@
         <a href="https://www.linkedin.com/in/gustavolanjoni" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.youtube.com/c/gustavolanjoni" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
+
+      
     </section>
+
+    
 
 <section id="estatisticas">
   <h2>Resultados que entregamos</h2>
@@ -59,7 +63,7 @@
     <div class="servico-card">
       <i class="fas fa-clock fa-2x"></i>
       <div>
-        <div class="numero" data-numero="3">0</div>
+        <div class="numero" data-numero="60">0</div>
         <p>dias de média de entrega</p>
       </div>
     </div>
@@ -75,6 +79,17 @@
   </div>
 </section>
 
+<section id="ferramentas" class="ferramentas-section">
+  
+  <div class="ferramentas-grid">
+    <div class="ferramenta"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><p>HTML5</p></div>
+    <div class="ferramenta"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><p>CSS3</p></div>
+    <div class="ferramenta"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
+    <div class="ferramenta"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"><p>Photoshop</p></div>
+    <div class="ferramenta"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><p>Figma</p></div>
+    <div class="ferramenta"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress"><p>WordPress</p></div>
+  </div>
+</section>
 
 
 <section id="motivo" class="section-motivo">
@@ -217,68 +232,68 @@
   <h2>Serviços</h2>
   <div class="cards-precos">
 
-    <div class="card-preco">
+    <div class="card-preco" data-servico="social-media">
       <i class="fas fa-bullhorn"></i>
       <h3>Social Media</h3>
       <p class="valor">R$ 250</p>
       <p>Pacote com 10 artes otimizadas para Instagram e Facebook.</p>
-      <button>Ver Detalhes</button>
+      <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
 
-    <div class="card-preco">
+    <div class="card-preco" data-servico="banner-web">
       <i class="fas fa-image"></i>
       <h3>Banner Web</h3>
       <p class="valor">R$ 120</p>
       <p>Banner profissional para divulgação online.</p>
-      <button>Ver Detalhes</button>
+      <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
 
-    <div class="card-preco">
+    <div class="card-preco" data-servico="pagina-vendas">
       <i class="fas fa-mouse-pointer"></i>
       <h3>Página de Vendas</h3>
       <p class="valor">R$ 790</p>
       <p>Landing page moderna para conversão de clientes.</p>
-      <button>Ver Detalhes</button>
+      <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
 
-    <div class="card-preco">
+    <div class="card-preco" data-servico="ecommerce">
       <i class="fas fa-store"></i>
       <h3>Loja E-commerce</h3>
       <p class="valor">R$ 1290</p>
       <p>Loja virtual com carrinho, categorias e painel de controle.</p>
-      <button>Ver Detalhes</button>
+      <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
 
-    <div class="card-preco">
+    <div class="card-preco" data-servico="datas">
       <i class="fas fa-calendar-alt"></i>
       <h3>Atualização de Datas</h3>
       <p class="valor">R$ 90</p>
       <p>Artes comemorativas ou banners especiais por temporada.</p>
-      <button>Ver Detalhes</button>
+      <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
 
-    <div class="card-preco">
+    <div class="card-preco" data-servico="identidade-visual">
       <i class="fas fa-palette"></i>
       <h3>Identidade Visual</h3>
       <p class="valor">R$ 690</p>
       <p>Logo, paleta de cores e fontes para destacar sua marca.</p>
-      <button>Ver Detalhes</button>
+      <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
 
-    <div class="card-preco">
+    <div class="card-preco" data-servico="seo">
       <i class="fas fa-search-dollar"></i>
       <h3>Otimização SEO</h3>
       <p class="valor">R$ 320</p>
       <p>Seu site posicionado no Google com estratégias de SEO.</p>
-      <button>Ver Detalhes</button>
+      <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
 
-    <div class="card-preco">
+    <div class="card-preco" data-servico="whatsapp">
       <i class="fas fa-comments"></i>
       <h3>Integração WhatsApp</h3>
       <p class="valor">R$ 180</p>
       <p>Botões para contato direto via WhatsApp, Instagram, etc.</p>
-      <button>Ver Detalhes</button>
+      <button class="btn-ver-detalhes">Ver Detalhes</button>
     </div>
 
   </div>
@@ -372,6 +387,20 @@
   &copy; 2025 Gustavo Lanjoni. Todos os direitos reservados.
 </footer>
 
+
+<!-- Botão WhatsApp Flutuante -->
+<a href="https://wa.me/5517996489436" target="_blank" class="whatsapp-float" aria-label="Converse via WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/modal.js"></script>
+
+
+
+
+
+
+
 <script>
   // FAQ toggle
   const faqs = document.querySelectorAll('.faq-item');
@@ -389,13 +418,6 @@
     });
   });
 </script>
-
-<!-- Botão WhatsApp Flutuante -->
-<a href="https://wa.me/5517996489436" target="_blank" class="whatsapp-float" aria-label="Converse via WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<script src="js/modal.js"></script>
 
 <script>
   function smoothScrollTo(target, duration = 1000) {
