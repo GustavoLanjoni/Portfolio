@@ -1,360 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Gustavo Lanjoni</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/styles.css">
+<title>Portfólio Gustavo Lanjoni</title>
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">Gustavo Lanjoni</div>
-        <div class="menu-icon" id="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </header>
+<header>
+  <div class="logo">Gustavo Lanjoni</div>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contato" class="cta">Contato</a>
+  </nav>
+</header>
 
-    <!-- Seção Principal -->
-    <section class="main-section">
-        <div class="container">
-            <h1>Bem-vindo ao meu Portfólio</h1>
-            <p class="txt-principal">Aqui você encontrará projetos que refletem minha dedicação e paixão pela
-                tecnologia. Fique à vontade para
-                explorar, conhecer mais sobre o meu trabalho e descobrir como a programação pode transformar ideias em
-                soluções. 😊</p>
-        </div>
-        <div class="background-shape"></div>
-        <div class="background-shape-two"></div>
+<main>
+
+  <section class="cta-banner" id="home">
+    <h1>Sites Profissionais para Seu Negócio</h1>
+    <p>Design moderno, funcionalidade e presença online que gera resultados reais para sua empresa.</p>
+    <button onclick="location.href='#contato'">Solicite um Orçamento</button>
+  </section>
+
+  <section class="sobre-servicos">
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Desenvolvedor web especializado em criar sites, e-commerces e portfolios que alavancam negócios digitais.</p>
+      <div class="redes">
+        <a href="https://www.tiktok.com/@gustavolanjoni" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/gustavolanjoni" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/gustavolanjoni" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/c/gustavolanjoni" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
     </section>
 
-    <section id="sobre" class="section">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <div class="about-container">
-                <img src="img/foto.jpg" alt="Foto de Gustavo Lanjoni" class="about-image"> <!-- LinkedIn -->
-
-                <p>Meu nome é Gustavo Lanjoni, tenho 20 anos e sou de Votuporanga-Sp. Desde criança, sempre fui fascinado
-                    por computadores e tecnologia, o que me levou a escolher uma carreira na área de informática e
-                    programação. Atualmente, estou cursando Engenharia de Software na Estácio, onde
-                    aprofundo meu conhecimento em desenvolvimento de software.
-                    Sou um desenvolvedor apaixonado por criar soluções inovadoras, com foco em simplicidade e
-                    funcionalidade. Busco sempre desafios que me permitam crescer e aprimorar minhas habilidades.</p>
-            </div>
-        </div>
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="servico-card"><i class="fas fa-paint-brush"></i> Design Personalizado</div>
+      <div class="servico-card"><i class="fas fa-calendar-alt"></i> Atualização de Datas Comemorativas</div>
+      <div class="servico-card"><i class="fas fa-file-code"></i> Landing Pages</div>
+      <div class="servico-card"><i class="fas fa-shopping-cart"></i> Loja E-commerce</div>
+      <div class="servico-card"><i class="fas fa-briefcase"></i> Portfólio Profissional</div>
     </section>
+  </section>
 
-    <!--habilidades-->
-    <section id="linguagens" class="section">
-        <div class="container">
-            <h2>Minhas Skills</h2>
-
-            <!-- Abas -->
-            <div class="tabs" id="tabs-habilidades">
-                <button class="tab-button active" onclick="openTab('frontend', 'habilidades')">Front-End</button>
-                <button class="tab-button" onclick="openTab('backend', 'habilidades')">Back-End</button>
-                <button class="tab-button" onclick="openTab('database', 'habilidades')">Banco de Dados</button>
-            </div>
-
-            <!-- Conteúdo das Abas -->
-            <div id="frontend" class="tab-content active">
-                <div class="linguagens-container">
-                    <div class="linguagem">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                        <p>HTML</p>
-                    </div>
-                    <div class="linguagem">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS">
-                        <p>CSS</p>
-                    </div>
-                    <div class="linguagem">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                            alt="JavaScript">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="linguagem">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
-                        <p>Angular</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="backend" class="tab-content">
-                <div class="linguagens-container">
-                    <div class="linguagem">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-                        <p>Java</p>
-                    </div>
-                    <div class="linguagem">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-                        <p>Spring Boot</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="database" class="tab-content">
-                <div class="linguagens-container">
-                    <div class="linguagem">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-                        <p>MySQL</p>
-                    </div>
-                    <div class="linguagem">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                        <p>PostgreSQL</p>
-                    </div>
-                </div>
-            </div>
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos-grid">
+      <div class="projeto-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Projeto Portfolio" />
+        <div class="projeto-info">
+          <h3>Portfolio Profissional Saúde</h3>
+          <p>Portfolio personalizado, fácil de editar e otimizado para mobile.</p>
+          <button class="btn-ver-projeto" onclick="window.open('https://seuprojetourl.com/portfolio', '_blank')">Ver Projeto</button>
         </div>
-    </section>
-
-    <!-- Seção Projetos -->
-    <section id="projetos" class="section">
-        <div class="container">
-            <h2> Meus Projetos</h2>
-
-            <!-- Abas -->
-            <div class="tabs" id="tabs-projetos">
-                <button class="tab-button active" onclick="openTab('sistemas', 'projetos')">Sistemas</button>
-                <button class="tab-button " onclick="openTab('paginaWeb', 'projetos')">Página Web</button>
-                <button class="tab-button" onclick="openTab('wordpress', 'projetos')">WordPress</button>
-            </div>
-
-            <!-- Conteúdo das Abas -->
-            <div id="paginaWeb" class="tab-content active">
-                <div class="projects-grid">
-                    <div class="card">
-                        <h3>Blog - LanTech Programming</h3>
-                        <img src="img/blog.png" alt="Imagem do Projeto 1" class="project-img">
-                        <p>Esse blog está sendo feito pensando na comunidade de programadores! 🧑‍💻</p>
-                        <div class="icons">
-                            <i class="fab fa-html5" style="color: #e34f26;"></i>
-                            <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
-                            <i class="fab fa-js" style="color: #f7df1e;"></i>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                                alt="MongoDB Logo" width="30px">
-                        </div>
-                        <a href="https://techlanprogramming.netlify.app/" class="btn" target="_blank">Projeto em
-                            andamento</a>
-                    </div>
-
-                    <div class="card">
-                        <h3>GelaAr Ar-condicionado</h3>
-                        <img src="img/gelaar.png" alt="Imagem do Projeto 2" class="project-img">
-                        <p>Site para um instalador de ar-condicionado, apresentando serviços e diferenciais da GelaAr!
-                            ❄️</p>
-                        <div class="icons">
-                            <i class="fab fa-html5" style="color: #e34f26;"></i>
-                            <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
-                            <i class="fab fa-js" style="color: #f7df1e;"></i>
-                        </div>
-                        <a href="https://gelarcondicionado.netlify.app" class="btn" target="_blank">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--Sistemas em JAVA Spring boot AQUI-->
-            <div id="sistemas" class="tab-content">
-                <div class="projects-grid">
-
-
-                    <div class="card">
-                        <h3>Simulador de Investimentos</h3>
-                        <img src="img/SimuladorInvestimento.png" alt="Imagem do Projeto - Simulador de Investimentos" class="project-img">
-                        <p>Aplicativo em Java com interface gráfica (Swing) que simula o rendimento de investimentos com
-                            base em juros compostos.</p>
-                        <div class="icons">
-                            <i class="fab fa-java" style="color: #ff7b00;"></i>
-                        </div>
-                        <a href="https://github.com/GustavoLanjoni/SimuladorInvestimento" class="btn" target="_blank">Ver Projeto</a>
-                    </div>
-                    
-
-
-
-                </div>
-            </div>
-
-            <div id="wordpress" class="tab-content">
-                <div class="projects-grid">
-                    <div class="card">
-                        <h3>Tecudi</h3>
-                        <img src="img/tecudi.png" alt="Imagem do Projeto" class="project-img">
-                        <p>Site para dropshipping com um design moderno e banco de dados. 📦</p>
-                        <div class="icons">
-                            <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
-                        </div>
-                        <a href="https://tecudi.com" class="btn" target="_blank">Ver Projeto</a>
-                    </div>
-
-                    <div class="card">
-                        <h3>Tráfego Supremo</h3>
-                        <img src="img/trafegosupremo.png" alt="Imagem do Projeto" class="project-img">
-                        <p>Página de vendas otimizada para alta conversão! 📈</p>
-                        <div class="icons">
-                            <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
-                        </div>
-                        <a href="https://trafegosupremo.com.br" class="btn" target="_blank">Ver Projeto</a>
-                    </div>
-
-                    <div class="card">
-                        <h3>Barbearia</h3>
-                        <img src="img/babearia.png" alt="Imagem do Projeto" class="project-img">
-                        <p>Landing page para barbearia profissional! ✂️</p>
-                        <div class="icons">
-                            <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
-                        </div>
-                        <a href="https://cursobarber.com.br" class="btn" target="_blank">Ver Projeto</a>
-                    </div>
-
-                    <div class="card">
-                        <h3>Online Shoope</h3>
-                        <img src="img/onlineShope.png" alt="onlineShope" class="project-img">
-                        <p>Loja online desenvolvida com integração a banco de dados. 🛒</p>
-                        <div class="icons">
-                            <i class="fab fa-wordpress" style="color: #21759b;"></i> <!-- Ícone WordPress -->
-                        </div>
-                        <a href="https://onlineshopacessorios.com" class="btn" target="_blank">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
-
+      </div>
+      <div class="projeto-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80" alt="Projeto Loja E-commerce" />
+        <div class="projeto-info">
+          <h3>Loja E-commerce Fashion</h3>
+          <p>Loja online moderna e intuitiva para seu negócio de moda.</p>
+          <button class="btn-ver-projeto" onclick="window.open('https://seuprojetourl.com/ecommerce', '_blank')">Ver Projeto</button>
         </div>
-    </section>
-
-
-
-    <!-- Seção Contato -->
-    <section id="contato" class="section">
-        <div class="container">
-            <h2>Blog - Lantech</h2>
-            <p>Conecte-se comigo pelas redes sociais ou envie um e-mail!</p>
-
-
-            <!-- Botão para acessar o blog -->
-            <div class="blog-button">
-                <a href="https://techlanprogramming.netlify.app" class="btn-futuristic" target="_blank">Acesse o
-                    Blog</a>
-            </div>
-
-            <!-- Posts do Blog -->
-            <div class="blog-posts">
-                <!-- Post 1 -->
-                <div class="post-card">
-                    <a
-                        href="https://www.instagram.com/p/DC_94j4pctl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
-                            src="img/image (2).png" alt="Imagem do post 1"></a>
-                    <h3>Desenvolvimento Web com Frameworks </h3>
-                    <p>Frameworks como React e Vue.js agilizam o desenvolvimento, criando aplicações mais rápidas e
-                        escaláveis com menos código.</p>
-                </div>
-                <!-- Post 2 -->
-                <div class="post-card">
-                    <a
-                        href="https://www.instagram.com/p/DDezk3ex57d/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
-                            src="img/cibersegurança.png" alt="Imagem do post 2"></a>
-                    <h3>Segurança e Cibersegurança</h3>
-                    <p>Explorando o mundo da tecnologia com segurança: dicas e recursos para proteger sua jornada na
-                        programação.</p>
-                </div>
-                <!-- Post 3 -->
-                <div class="post-card">
-                    <a
-                        href="https://www.instagram.com/p/DDkNhnRJWqU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img
-                            src="img/image.png" alt="Imagem do post 3"></a>
-                    <h3>GitHub top! </h3>
-                    <p>Como deixar seu GitHub proficional!
-                        E mais atrente para os recrutadores.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="projeto-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Projeto Landing Page" />
+        <div class="projeto-info">
+          <h3>Landing Page para Evento</h3>
+          <p>Landing page otimizada para conversão de inscrições e vendas.</p>
+          <button class="btn-ver-projeto" onclick="window.open('https://seuprojetourl.com/landingpage', '_blank')">Ver Projeto</button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
+  <section id="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item" tabindex="0" role="button" aria-expanded="false" aria-controls="faq1" id="faq1button">
+      <div class="faq-question">
+        Quanto tempo leva para criar um site?
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer" id="faq1" aria-labelledby="faq1button">
+        Normalmente entre 2 a 4 semanas, dependendo da complexidade do projeto.
+      </div>
+    </div>
+    <div class="faq-item" tabindex="0" role="button" aria-expanded="false" aria-controls="faq2" id="faq2button">
+      <div class="faq-question">
+        Vocês oferecem suporte após a entrega?
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer" id="faq2" aria-labelledby="faq2button">
+        Sim, temos planos de manutenção para garantir que seu site esteja sempre atualizado e seguro.
+      </div>
+    </div>
+  </section>
 
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Nome" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
+</main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="social-icons">
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/gustavolanjoni/" target="_blank">
-                    <img src="img/linkedin.png" alt="LinkedIn" width="40" height="40">
-                </a>
-                <!-- GitHub -->
-                <a href="https://github.com/GustavoLanjoni" target="_blank">
-                    <img src="img/github1.png" alt="GitHub" width="40" height="40">
-                </a>
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/devlanjoni/" target="_blank">
-                    <img src="img/instagram.png" alt="Instagram" width="40" height="40">
-                </a>
-                <!-- TikTok -->
-                <a href="https://www.tiktok.com/@gustavo_lanjoni" target="_blank">
-                    <img src="img/tiktok.png" alt="TikTok" width="40" height="40">
-                </a>
-            </div>
+<footer>
+  &copy; 2025 Gustavo Lanjoni. Todos os direitos reservados.
+</footer>
 
-            <div class="contact-info">
-                <p>Entre em contato comigo:</p>
-                <p>Email: <a href="mailto:gustavosilva94514@gmail.com">gustavosilva94514@gmail.com</a></p>
-                <p>Telefone: <a href="tel:+5517996489436">+55 (17) 99648-9436</a></p>
-            </div>
+<script>
+  // FAQ toggle
+  const faqs = document.querySelectorAll('.faq-item');
+  faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+      const isActive = faq.classList.contains('active');
+      faqs.forEach(f => {
+        f.classList.remove('active');
+        f.setAttribute('aria-expanded', 'false');
+      });
+      if (!isActive) {
+        faq.classList.add('active');
+        faq.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
 
-            <div class="about-me">
-                <p>Desenvolvedor apaixonado por criar soluções inovadoras e explorar novas tecnologias. Sempre buscando
-                    aprender mais e enfrentar novos desafios.</p>
-            </div>
-        </div>
+<!-- Botão WhatsApp Flutuante -->
+<a href="https://wa.me/5517996489436" target="_blank" class="whatsapp-float" aria-label="Converse via WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 Gustavo Lanjoni. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-
-
-    <!-- Script aba de skiils -->
-    <script>
-        function openTab(tabName, section) {
-            var tabs = document.querySelectorAll(`#${section} .tab-content`);
-            var buttons = document.querySelectorAll(`#${section} .tab-button`);
-
-            // Esconde todos os conteúdos das abas
-            tabs.forEach(tab => {
-                tab.classList.remove("active");
-            });
-
-            // Remove a classe 'active' dos botões
-            buttons.forEach(button => {
-                button.classList.remove("active");
-            });
-
-            // Mostra o conteúdo da aba clicada
-            document.getElementById(tabName).classList.add("active");
-
-            // Adiciona a classe 'active' no botão da aba clicada
-            event.currentTarget.classList.add("active");
-        }
-
-    </script>
 
 </body>
-
 </html>
