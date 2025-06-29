@@ -155,11 +155,34 @@
     background: #5c6b31;
   }
 
-  .ferramentas-section {
-  padding: 3rem 1.5rem;
+.ferramentas-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f9faf7, #d9e2c8);
   text-align: center;
-  background: #eef1e6;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 1100px;
+  margin: 3rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3a4a23;
 }
+
+.ferramentas-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.ferramentas-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #556b2f;
+  font-weight: 400;
+}
+
 
 .ferramentas-section h2 {
   font-size: 2rem;
