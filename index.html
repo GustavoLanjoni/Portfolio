@@ -12,7 +12,7 @@
 <header>
   <div class="logo">Gustavo Lanjoni</div>
   <nav> 
-    <a href="#contato" class="cta">Contato</a>
+    <a href="#orcamento" class="cta">Contato</a>
   </nav>
 </header>
 
@@ -21,7 +21,7 @@
   <section class="cta-banner" id="home">
     <h1>Sites Profissionais para Seu Negócio</h1>
     <p>Design moderno, funcionalidade e presença online que gera resultados reais para sua empresa.</p>
-    <button onclick="location.href='#contato'">Solicite um Orçamento</button>
+    <button onclick="location.href='#orcamento'">Solicite um Orçamento</button>
   </section>
 
   <section class="sobre-servicos">
@@ -80,7 +80,7 @@
 </section>
 
 <section id="ferramentas" class="ferramentas-section">
-  
+  <h2>Ferramentas que Utilizo</h2>
   <div class="ferramentas-grid">
     <div class="ferramenta"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><p>HTML5</p></div>
     <div class="ferramenta"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><p>CSS3</p></div>
@@ -313,16 +313,28 @@
   
 
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <form>
-      <input type="text" name="nome" placeholder="Nome" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
+<section id="orcamento" style="max-width:480px; margin: 0 auto 4rem;">
+  <h2>Solicitar Orçamento</h2>
+  <form id="form-orcamento">
+    <input type="text" name="nome" placeholder="Nome" required />
+    
+    <select name="servico" required>
+      <option value="" disabled selected>Tipo de serviço desejado</option>
+      <option value="Social Media">Social Media</option>
+      <option value="Banner Web">Banner Web</option>
+      <option value="Página de Vendas">Página de Vendas</option>
+      <option value="Loja E-commerce">Loja E-commerce</option>
+      <option value="Atualização de Datas">Atualização de Datas</option>
+      <option value="Identidade Visual">Identidade Visual</option>
+      <option value="Otimização SEO">Otimização SEO</option>
+      <option value="Integração WhatsApp">Integração WhatsApp</option>
+    </select>
+    
+    <textarea name="descricao" rows="4" placeholder="Descrição do projeto" required></textarea>
+    
+    <button type="submit">Solicitar Orçamento</button>
+  </form>
+</section>
 
   <section id="faq">
   <h2>Perguntas Frequentes</h2>
@@ -393,7 +405,28 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
+
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="js/modal.js"></script>
+
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  const revealOptions = {
+    origin: 'bottom',
+    distance: '40px',
+    duration: 900,
+    easing: 'ease-in-out',
+    reset: false,           // ❌ remove o recolhimento
+    opacity: 0,             // começa invisível
+    scale: 0.95,            // leve escala inicial
+    interval: 100           // anima em sequência
+  };
+
+  ScrollReveal().reveal('.card-preco, .motivo-card, .faq-item, .projeto-card, .servico-card, .section-motivo, .cta-banner, #sobre, #contato, footer', revealOptions);
+</script>
+
 
 
 
@@ -502,6 +535,38 @@
       ativado = true;
       animarNumeros();
     }
+  });
+</script>
+
+
+
+<script>
+  const form = document.getElementById('form-orcamento');
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const nome = form.nome.value.trim();
+    const servico = form.servico.value;
+    const descricao = form.descricao.value.trim();
+    
+    if (!nome || !servico || !descricao) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+    
+    // Monta a mensagem para WhatsApp
+    const mensagem = `Olá, meu nome é ${nome}.\nGostaria de solicitar um orçamento para o serviço: ${servico}.\nDescrição do projeto:\n${descricao}`;
+    
+    // Número do WhatsApp (coloque seu número com código do país e sem espaços ou sinais)
+    const numeroWhatsApp = "5517996489436";
+    
+    // Abre o WhatsApp Web ou app no celular com a mensagem preenchida
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+    
+    window.open(urlWhatsApp, '_blank');
+    
+    form.reset();
   });
 </script>
 

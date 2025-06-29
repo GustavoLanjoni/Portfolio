@@ -156,7 +156,9 @@
   }
 
   .ferramentas-section {
-  padding-top: 50px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: #eef1e6;
 }
 
 .ferramentas-section h2 {
@@ -632,23 +634,20 @@
     display: block;
   }
 
-  /* Contato simples, centralizado */
-  #contato {
-    max-width: 480px;
-    margin: 0 auto 4rem;
-  }
-  #contato h2 {
+   #orcamento h2 {
     color: #5c6b31;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  form {
+  
+  #orcamento form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  input, textarea {
+  
+  #orcamento input, #orcamento select, #orcamento textarea {
     padding: 0.75rem 1rem;
     border: 1.5px solid #9ba282;
     border-radius: 12px;
@@ -657,12 +656,14 @@
     font-family: inherit;
     resize: vertical;
   }
-  input:focus, textarea:focus {
+  
+  #orcamento input:focus, #orcamento select:focus, #orcamento textarea:focus {
     outline: none;
     border-color: #5c6b31;
     box-shadow: 0 0 8px #5c6b31;
   }
-  button {
+  
+  #orcamento button {
     background-color: #5c6b31;
     color: #f9faf7;
     padding: 0.75rem;
@@ -673,7 +674,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  button:hover {
+  
+  #orcamento button:hover {
     background-color: #76894c;
   }
 
@@ -916,3 +918,6 @@
     gap: 1.5rem;
   }
 }
+
+
+
