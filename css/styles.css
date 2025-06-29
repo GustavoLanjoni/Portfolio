@@ -2,6 +2,11 @@
   * {
     margin: 0; padding: 0; box-sizing: border-box;
   }
+  html {
+  scroll-behavior: smooth;
+}
+
+
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f9faf7;
@@ -139,7 +144,6 @@
   .redes a {
     background: #76894c;
     color: #f9faf7;
-    font-size: 1.8rem;
     padding: 0.5rem 0.75rem;
     border-radius: 8px;
     display: flex;
@@ -172,7 +176,6 @@
     box-shadow: 0 6px 15px rgba(92,107,49,0.1);
     color: #4b5139;
     font-weight: 600;
-    font-size: 0.95rem;
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -183,7 +186,6 @@
     box-shadow: 0 10px 25px rgba(92,107,49,0.3);
   }
   .servico-card i {
-    font-size: 1.8rem;
     color: #5c6b31;
   }
 
@@ -349,8 +351,7 @@
     user-select: none;
   }
 
-  /* Ícones fontawesome */
-  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
 
   /* Responsivo */
   @media (max-width: 860px) {
