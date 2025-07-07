@@ -944,3 +944,69 @@
 
 
 
+/*TEMPORARIo*/
+
+.apps-section {
+
+  padding: 4rem 1rem;
+  color: #ffffff;
+}
+
+.apps-section .container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.apps-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #00d8ff;
+}
+
+.apps-subtitle {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
+.destaque {
+  color: #00ffcc;
+}
+
+.cards-em-breve {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-app {
+  background-color: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.card-app:hover {
+  transform: translateY(-5px);
+}
+
+.card-app i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00d8ff;
+}
+
+.card-app h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.card-app p {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
