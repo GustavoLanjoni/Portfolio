@@ -947,9 +947,9 @@
 /*TEMPORARIo*/
 
 .apps-section {
-
+  background-color: #f9faf7;
   padding: 4rem 1rem;
-  color: #ffffff;
+  color: #4b5139;
 }
 
 .apps-section .container {
@@ -961,17 +961,19 @@
 .apps-title {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #00d8ff;
+  color: #5c6b31;
+  font-weight: 700;
 }
 
 .apps-subtitle {
   font-size: 1.1rem;
-  color: #000000;
+  color: #76894c;
   margin-bottom: 3rem;
 }
 
 .destaque {
-  color: #00ffcc;
+  color: #5c6b31;
+  font-weight: 600;
 }
 
 .cards-em-breve {
@@ -982,31 +984,146 @@
 }
 
 .card-app {
-  background-color: #1a1a1a;
-  border: 1px solid #2c2c2c;
+  background-color: #eef1e6;
+  border: 1px solid #dfe4cc;
   border-radius: 16px;
   padding: 2rem;
   width: 280px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
+  box-shadow: 0 4px 12px rgba(92, 107, 49, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  color: #3a4a23;
 }
 
 .card-app:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(92, 107, 49, 0.25);
 }
 
 .card-app i {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  color: #5c6b31;
   margin-bottom: 1rem;
-  color: #00d8ff;
 }
 
-.card-app h3 {
-  color: #fff;
-  margin-bottom: 0.5rem;
+
+
+/* Seção Soluções Mobile */
+#solucoes-mobile {
+  background-color: #f9faf7;
+  padding: 4rem 1rem;
+  text-align: center;
+  color: #4b5139;
 }
 
-.card-app p {
-  color: #ffffff;
+#solucoes-mobile h2 {
+  font-size: 2.3rem;
+  color: #5c6b31;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.cards-solucoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card-solucao {
+  background-color: #eef1e6;
+  border: 1px solid #dfe4cc;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(92, 107, 49, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4b5139;
+}
+
+.card-solucao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(92, 107, 49, 0.2);
+}
+
+.card-solucao i {
+  font-size: 2.2rem;
+  color: #5c6b31;
+  margin-bottom: 1rem;
+}
+
+.card-solucao h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #5c6b31;
+  margin-bottom: 0.6rem;
+}
+
+.card-solucao p {
   font-size: 0.95rem;
+  color: #76894c;
+  line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  #solucoes-mobile h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-solucao {
+    padding: 1.5rem 1rem;
+  }
+
+  .card-solucao i {
+    font-size: 2rem;
+  }
+
+  .card-solucao h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-solucao p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.rodape-com-redes {
+  background-color: #4b5139;
+  color: #d8dfb7;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.container-rodape {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes-sociais-footer {
+  display: flex;
+  gap: 1rem;
+}
+
+.redes-sociais-footer a {
+  color: #d8dfb7;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociais-footer a:hover {
+  color: #f9faf7;
+  transform: scale(1.2);
 }
