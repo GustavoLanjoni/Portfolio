@@ -275,7 +275,7 @@
 }
 .cards-motivo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .motivo-card {
@@ -1127,3 +1127,154 @@
   color: #f9faf7;
   transform: scale(1.2);
 }
+
+
+
+
+
+
+
+
+
+
+
+.diferenciais-section {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.container-diferenciais {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+}
+
+.diferenciais-grid {
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.diferencial-card {
+  background-color: #fdfdfd;
+  border-left: 4px solid #27ae60;
+  padding: 1.8rem 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.diferencial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.diferencial-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.diferencial-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+
+.depoimentos-carrossel {
+  width: 100%;
+  overflow: hidden;
+  background: #f7f7f7;
+  padding: 1rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  animation: scrollHorizontal 20s linear infinite;
+}
+
+.depoimento-card {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.depoimento-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.depoimento-card div {
+  flex: 1;
+}
+
+.depoimento-card strong {
+  font-size: 0.85rem;
+  display: block;
+}
+
+.depoimento-card p {
+  font-size: 0.75rem;
+  margin: 0;
+  color: #555;
+}
+
+.depoimento-card .estrelas {
+  color: #f1c40f;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+/* Animação horizontal contínua */
+@keyframes scrollHorizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Ajuste se necessário */
+}
+
+
+
+
+.cta-pos-motivo {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta-pos-motivo button {
+  background-color: #5c6b31;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-pos-motivo button:hover {
+  background-color: #4a5825;
+  transform: scale(1.05);
+}
+
+
+
